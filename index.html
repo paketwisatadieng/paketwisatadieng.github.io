@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Paket Wisata Dieng – Info Lengkap, Harga, Itinerary, Fasilitas</title>
+  <meta name="description" content="Pilihan paket wisata Dieng lengkap dengan harga, fasilitas, itinerary, FAQ, dan tips liburan ke Dieng.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <article>
+      <h1>Paket Wisata Dieng – Liburan Hemat & Berkesan</h1>
+      <section>
+        <h2 id="paket">Pilihan Paket Tour Dieng</h2>
+        <ul>
+          <li>
+            <h3>Paket 1 Hari (One Day Trip)</h3>
+            <p>Trip singkat ke destinasi utama Dieng, cocok untuk traveler sibuk.</p>
+          </li>
+          <li>
+            <h3>Paket 2 Hari 1 Malam</h3>
+            <p>Explore Dieng lebih dalam, sunrise Sikunir, kawah, candi, dan telaga.</p>
+          </li>
+          <li>
+            <h3>Paket 3 Hari 2 Malam</h3>
+            <p>Jelajah Dieng plus hidden gem, aktivitas seru dan kuliner lokal.</p>
+          </li>
+        </ul>
+      </section>
+      <section id="faq">
+        <h2>Pertanyaan yang Sering Ditanyakan (FAQ)</h2>
+        <h3>Berapa harga paket wisata Dieng?</h3>
+        <p>Harga mulai dari 750 ribuan/orang, tergantung durasi dan jumlah peserta.</p>
+        <h3>Fasilitas apa saja yang didapat?</h3>
+        <p>Termasuk transportasi, tiket wisata, penginapan (untuk paket menginap), guide, dan makan.</p>
+      </section>
+      <section id="kontak">
+        <h2>Kontak & Reservasi</h2>
+        <p>Untuk info lebih lanjut, hubungi kami di email: <a href="mailto:info@paketdieng.id">info@paketdieng.id</a></p>
+      </section>
+    </article>
+  </main>
+  <div id="footer"></div>
+  <script>
+    fetch('header.html').then(res => res.text()).then(html => { document.getElementById('header').innerHTML = html; });
+    fetch('footer.html').then(res => res.text()).then(html => { document.getElementById('footer').innerHTML = html; });
+  </script>
+</body>
+</html>
