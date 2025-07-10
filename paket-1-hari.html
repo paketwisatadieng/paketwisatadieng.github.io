@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paket Wisata Dieng 1 Hari – Sunrise Sikunir & Jelajah Spot Terbaik</title>
+  <meta name="description" content="Paket wisata Dieng 1 hari, sunrise Sikunir, jelajah destinasi unggulan seperti Kawah Sikidang, Candi Arjuna, Batu Ratapan Angin, dan oleh-oleh khas Dieng. Cocok untuk traveler sibuk!">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="header"></div>
+  
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Paket Wisata Dieng 1 Hari</h1>
+          <div class="hero-desc">
+            <strong>Trip singkat, pengalaman maksimal!</strong> Nikmati sunrise legendaris di Bukit Sikunir, lanjut keliling destinasi favorit Dieng dalam sehari. Termasuk tiket, transport, makan, dan guide. Siap dijemput dari berbagai kota.
+          </div>
+          <a href="#harga" class="hero-btn">Cek Harga & Fasilitas</a>
+        </div>
+        <div class="hero-img">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Trip Dieng 1 Hari">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="itinerary">
+      <div class="section-title">Itinerary Paket 1 Hari</div>
+      <ul>
+        <li><strong>00.00</strong> – Penjemputan di meeting point/kota asal</li>
+        <li><strong>04.30</strong> – Sunrise & explore Bukit Sikunir & Telaga Cebong</li>
+        <li><strong>07.00</strong> – Sarapan khas Dieng</li>
+        <li><strong>08.00</strong> – Jelajah Kawah Sikidang</li>
+        <li><strong>09.30</strong> – Tour Komplek Candi Arjuna</li>
+        <li><strong>10.30</strong> – Batu Ratapan Angin & Telaga Warna</li>
+        <li><strong>12.30</strong> – Kuliner & oleh-oleh khas Dieng</li>
+        <li><strong>15.00</strong> – Selesai & diantar pulang</li>
+      </ul>
+    </section>
+
+    <section class="section" id="harga">
+      <div class="section-title">Harga & Fasilitas</div>
+      <div class="paket-list">
+        <div class="paket-card">
+          <div class="paket-title">Fasilitas Termasuk</div>
+          <div class="paket-info">
+            <ul>
+              <li>Transportasi AC (pick up & drop)</li>
+              <li>Tiket masuk semua destinasi</li>
+              <li>Makan 2x (sarapan & makan siang)</li>
+              <li>Guide lokal profesional</li>
+              <li>Air mineral</li>
+              <li>Foto dokumentasi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="paket-card">
+          <div class="paket-title">Harga Paket Mulai</div>
+          <div class="paket-info">
+            <ul>
+              <li>2–3 orang: <b>Rp 900.000 / orang</b></li>
+              <li>4–6 orang: <b>Rp 800.000 / orang</b></li>
+              <li>7–10 orang: <b>Rp 725.000 / orang</b></li>
+              <li>Rombongan >10: <b>Chat Admin</b></li>
+            </ul>
+          </div>
+          <a class="paket-btn" href="#kontak">Booking Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <div class="section-title">Kontak & Reservasi</div>
+      <div>
+        Email: <a href="mailto:info@paketdieng.id">info@paketdieng.id</a> <br>
+        WhatsApp: <a href="#" target="_blank" rel="noopener">081111</a>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>
+    fetch('header.html').then(res => res.text()).then(data => { document.getElementById('header').innerHTML = data });
+    fetch('footer.html').then(res => res.text()).then(data => { document.getElementById('footer').innerHTML = data });
+  </script>
+</body>
+</html>
