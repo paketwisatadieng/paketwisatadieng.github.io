@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>404 – Halaman Tidak Ditemukan | Paket Wisata Dieng</title>
+  <meta name="description" content="Oops! Halaman yang kamu cari tidak ditemukan. Kembali ke beranda Paket Wisata Dieng.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="hero" style="min-height:48vh;display:flex;align-items:center;">
+      <div class="hero-content" style="width:100%;justify-content:center;">
+        <div class="hero-text" style="text-align:center;">
+          <h1 class="hero-title" style="font-size:2.8rem;">404</h1>
+          <div class="hero-desc" style="font-size:1.25rem;">
+            Halaman tidak ditemukan.<br>
+            <span style="font-size:1.1rem;color:#e63946;">Ups! Sepertinya alamat yang kamu buka salah atau halaman sudah dipindahkan.</span>
+          </div>
+          <a href="/" class="hero-btn" style="margin-top:25px;display:inline-block;">Kembali ke Beranda</a>
+        </div>
+        <div class="hero-img" style="display:none;"></div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>
+    fetch('header.html').then(res => res.text()).then(data => { document.getElementById('header').innerHTML = data });
+    fetch('footer.html').then(res => res.text()).then(data => { document.getElementById('footer').innerHTML = data });
+  </script>
+</body>
+</html>
