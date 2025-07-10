@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tentang Paket Wisata Dieng – Profil & Layanan Kami</title>
+  <meta name="description" content="Tentang Paket Wisata Dieng: pengalaman, tim, keunggulan, dan layanan untuk wisatawan lokal & mancanegara. Profesional, ramah, amanah.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="header"></div>
+  
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Tentang Kami</h1>
+          <div class="hero-desc">
+            <strong>Paket Wisata Dieng</strong> adalah tim lokal berpengalaman yang fokus melayani kebutuhan wisatawan dengan paket tour profesional, harga transparan, dan pelayanan maksimal.
+          </div>
+          <a href="paket-1-hari.html" class="hero-btn">Lihat Paket Wisata</a>
+        </div>
+        <div class="hero-img">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80" alt="About Paket Wisata Dieng">
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-title">Kenapa Memilih Kami?</div>
+      <ul>
+        <li><strong>Pengalaman Lokal</strong> – Tim kami asli Dieng, paham seluk-beluk destinasi & budaya.</li>
+        <li><strong>Harga Jujur</strong> – Tidak ada biaya tersembunyi, semua sudah all-in.</li>
+        <li><strong>Pilihan Paket Fleksibel</strong> – Bisa custom itinerary sesuai kebutuhan traveler, keluarga, maupun instansi.</li>
+        <li><strong>Support 24 Jam</strong> – Fast response via WA, telepon, maupun email.</li>
+        <li><strong>Legalitas Jelas</strong> – Sudah terdaftar resmi & bekerjasama dengan destinasi wisata Dieng.</li>
+      </ul>
+    </section>
+    <section class="section">
+      <div class="section-title">Tim Kami</div>
+      <p>
+        <strong>Paket Wisata Dieng</strong> didukung oleh tim muda, ramah, dan profesional yang selalu siap membantu setiap kebutuhan traveler. Kami percaya liburan tak hanya soal destinasi, tapi juga soal pengalaman yang nyaman & amanah.
+      </p>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>
+    fetch('header.html').then(res => res.text()).then(data => { document.getElementById('header').innerHTML = data });
+    fetch('footer.html').then(res => res.text()).then(data => { document.getElementById('footer').innerHTML = data });
+  </script>
+</body>
+</html>
