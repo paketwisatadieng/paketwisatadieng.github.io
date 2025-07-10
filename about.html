@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Tentang Kami</title>
+  <meta name="description" content="Tentang PutraTour & Private Trip Dieng. Layanan wisata eksklusif dengan pengalaman lebih dari 10 tahun di Dieng, fasilitas lengkap, dan reservasi mudah." />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="canonical" href="/about.html">
   <style>
     :root {
@@ -23,6 +24,7 @@
     }
     html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
     body { min-height:100vh; }
+    /* HEADER MASTER */
     .header {
       width: 100%;
       background: var(--footer);
@@ -51,7 +53,10 @@
       letter-spacing: 0.01em;
     }
     .logo svg { margin-right: 11px; }
-    nav { display: flex; gap: 18px; }
+    nav {
+      display: flex;
+      gap: 18px;
+    }
     nav a {
       color: #fffbe8;
       text-decoration: none;
@@ -61,7 +66,10 @@
       border-radius: 16px;
       transition: background .17s;
     }
-    nav a:hover, nav a.active { background: var(--primary); color: #fff; }
+    nav a:hover, nav a.active {
+      background: var(--primary);
+      color: #fff;
+    }
     .spacer-header { height: 66px; }
     /* ABOUT SECTION */
     .about-main {
@@ -159,7 +167,7 @@
       transform: scale(1.03) translateY(-2px);
     }
     .about-cta:hover::after, .about-cta:focus::after { margin-left:15px;}
-    /* FOOTER */
+    /* FOOTER MASTER */
     .footer {
       margin-top:54px;
       background: var(--footer);
@@ -181,6 +189,8 @@
       .header-wrap { padding: 0 9px; }
       .about-main {padding:16px 8px 13px 8px;}
       .about-title{font-size:1.2rem;}
+      .logo{font-size:1rem;}
+      nav a{font-size:.98rem;padding:4px 7px;}
     }
   </style>
 </head>
@@ -193,7 +203,7 @@
         PutraTour
       </a>
       <nav>
-        <a href="hemat.html" class="active">Paket Hemat</a>
+        <a href="hemat.html">Paket Hemat</a>
         <a href="kontak.html">Kontak</a>
       </nav>
     </div>
@@ -222,9 +232,10 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
-   <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
-© 2025 Tour Dieng 
+    <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+    © 2025 Tour Dieng 
   </footer>
 </body>
 </html>
