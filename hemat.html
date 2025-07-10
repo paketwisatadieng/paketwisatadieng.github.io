@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Paket wisata murah ke Dieng - Harga mulai 200Rb per Orang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="/hemat.html">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #009688;
+      --primary-dark: #026c5b;
+      --secondary: #fffbe8;
+      --accent: #ffb300;
+      --footer: #19335a;
+      --radius: 2.2rem;
+      --shadow: 0 8px 32px rgba(0,0,0,0.07);
+      --transition: .19s cubic-bezier(.6,.3,0,1.2);
+    }
+    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
+    body { min-height:100vh; }
+    .header {
+      width: 100%;
+      background: var(--footer);
+      color: #fff;
+      position: fixed;
+      top: 0; left: 0; z-index: 1000;
+      box-shadow: 0 4px 18px #1d355726;
+    }
+    .header-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px;
+      height: 68px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.44rem;
+      font-weight: 900;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .logo svg { margin-right: 13px; }
+    nav { display: flex; gap: 22px; }
+    nav a {
+      color: #fffbe8;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.01rem;
+      padding: 6px 17px;
+      border-radius: 18px;
+      transition: background .17s;
+      letter-spacing:.02em;
+    }
+    nav a:hover, nav a.active { background: var(--primary); color: #fff; }
+    .spacer-header { height: 68px; }
+    /* DESKRIPSI */
+    .paket-desc {
+      max-width: 900px;
+      margin: 62px auto 42px auto;
+      text-align: center;
+      color: #009688;
+      font-size: 1.4rem;
+      font-weight: 900;
+      background: #fff;
+      border-radius: 1.7rem;
+      box-shadow: 0 4px 18px #00968812;
+      padding: 38px 22px 25px 22px;
+      letter-spacing:0.01em;
+      line-height:1.55;
+      position:relative;
+    }
+    .paket-desc .desc-detail {font-weight:500;color:#19335a;font-size:1.11rem;display:block;margin:11px 0 2px;}
+    .paket-desc .desc-tag {
+      background: #e0f6f1;
+      color: #009688;
+      font-weight: 800;
+      display: inline-block;
+      padding: 5px 18px 4px 18px;
+      border-radius: 22px;
+      font-size: 1.01rem;
+      margin-top:12px;
+    }
+    /* GRID PAKET HARI */
+    .paket-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(255px,1fr));
+      gap: 34px;
+      max-width: 1080px;
+      margin: 0 auto 56px auto;
+      position:relative;
+      z-index:2;
+    }
+    .paket-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px 22px 38px 22px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+      border-bottom: 5px solid var(--primary);
+      min-height: 282px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      outline: 0 solid transparent;
+    }
+    .paket-card:hover, .paket-card:focus-within {
+      transform: translateY(-7px) scale(1.032) rotate(-0.5deg);
+      box-shadow: 0 12px 48px #00968824;
+      outline: 2px solid var(--primary);
+    }
+    .badge-paket {
+      position: absolute;
+      left: 50%; top: 13px; transform: translateX(-50%);
+      background: var(--accent);
+      color: #fff;
+      font-weight: 900;
+      padding: 8px 28px 8px 28px;
+      border-radius: 34px;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 16px #ffb30017;
+      letter-spacing:.02em;
+      z-index:2;
+      animation: badgePop .75s cubic-bezier(.2,2,.5,.9);
+    }
+    .icon-paket { font-size:2.6rem; margin:44px 0 17px 0; }
+    .paket-title {
+      font-size:1.27rem;
+      font-weight:900;
+      color: var(--primary);
+      margin:0 0 8px;
+      letter-spacing:.01em;
+    }
+    .paket-desc-card {
+      font-size:1.08rem;
+      color:#19335ab6;
+      margin-bottom:21px;
+      min-height:37px;
+      font-weight:500;
+    }
+    .paket-btn {
+      margin-top: auto;
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 900;
+      border-radius: 26px;
+      font-size: 1.09rem;
+      padding: 10px 34px 10px 22px;
+      text-decoration: none;
+      box-shadow: 0 2px 14px #00968812;
+      border: none;
+      letter-spacing: .02em;
+      transition: background var(--transition), transform var(--transition);
+      position: relative;
+      cursor: pointer;
+    }
+    .paket-btn::after {
+      content: '→';
+      margin-left: 7px;
+      font-weight: 900;
+      font-size: 1.13em;
+      transition: margin-left .17s cubic-bezier(.5,.3,.4,1.2);
+    }
+    .paket-btn:hover, .paket-btn:focus {
+      background: #03685a;
+      transform: scale(1.04) translateY(-2px);
+    }
+    .paket-btn:hover::after, .paket-btn:focus::after { margin-left:15px;}
+    .var1{border-bottom-color:#009688;}
+    .var2{border-bottom-color:#fd6185;}
+    .var3{border-bottom-color:#1976d2;}
+    .var4{border-bottom-color:#ff9800;}
+    /* GRID KOTA */
+    .kota-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+      gap: 32px;
+      max-width: 1120px;
+      margin: 0 auto 58px auto;
+      position:relative;
+      z-index:2;
+    }
+    .kota-card {
+      background: #fff;
+      border-radius: 2.2rem;
+      box-shadow: 0 7px 22px #1d355713;
+      padding: 33px 19px 27px 19px;
+      position: relative;
+      overflow: hidden;
+      border-left: 7px solid #009688;
+      display: flex;
+      flex-direction: column;
+      min-height: 212px;
+      transition: box-shadow var(--transition),border .17s;
+    }
+    .kota-card:hover {
+      box-shadow: 0 12px 48px #1976d223;
+      border-left: 7px solid #ffb300;
+    }
+    .kota-badge {
+      background: #ffb300;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.01rem;
+      padding: 7px 20px;
+      border-radius: 22px;
+      position: absolute;
+      top: 16px;
+      left: 20px;
+      box-shadow: 0 1px 8px #ffb30025;
+      z-index:2;
+      letter-spacing:.01em;
+    }
+    .icon-kota {
+      font-size: 1.8rem;
+      margin: 34px 0 13px 0;
+      display:block;
+    }
+    .kota-title {
+      font-size: 1.18rem;
+      font-weight: 900;
+      color: #009688;
+      margin-bottom: 8px;
+      letter-spacing:.01em;
+    }
+    .kota-desc {
+      font-size: 1.01rem;
+      color: #34495e;
+      margin-bottom: 15px;
+      font-weight:500;
+    }
+    .kota-btn {
+      display: inline-block;
+      background: #009688;
+      color: #fff;
+      font-weight: 800;
+      border-radius: 22px;
+      font-size: 1rem;
+      padding: 8px 27px 8px 17px;
+      text-decoration: none;
+      box-shadow: 0 1px 8px #00968813;
+      border: none;
+      letter-spacing: .01em;
+      transition: background var(--transition), transform var(--transition);
+      position: relative;
+      margin-top: auto;
+    }
+    .kota-btn::after { content:'→'; margin-left:8px; }
+    .kota-btn:hover, .kota-btn:focus { background:#1976d2; }
+    /* FAQ */
+    .faq-section {
+      max-width: 770px;
+      margin:60px auto 0;
+      background: #fff;
+      border-radius: 1.6rem;
+      box-shadow: var(--shadow);
+      padding:38px 32px 38px 32px;
+    }
+    .faq-section h2 {margin:0 0 17px; font-size:1.22rem;}
+    details {margin-bottom:15px;}
+    summary {
+      font-weight:900;
+      font-size:1.12rem;
+      cursor:pointer;
+      transition:color .13s;
+      color:var(--primary);
+      outline:none;
+      letter-spacing:.01em;
+    }
+    details[open] summary {color:var(--accent);}
+    details div {margin:7px 0 0 17px; color:#222;font-weight:500;}
+    .footer {
+      margin-top:65px;
+      background: var(--footer);
+      color: #fff;
+      text-align: center;
+      padding: 27px 0 15px 0;
+      font-size:1.01rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+      letter-spacing:.01em;
+      box-shadow: 0 -4px 24px #19335a13;
+    }
+    .footer a { color: #ffe16b; text-decoration: underline; font-weight:700;}
+    @media(max-width:700px){
+      .header-wrap { padding: 0 10px; }
+      .paket-desc{font-size:1rem;padding:14px 3px;}
+      .paket-grid{gap:13px;}
+      .faq-section{padding:13px 6px 14px 6px;}
+      .main{padding:7px;}
+      .kota-grid{gap:13px;}
+      .kota-card{padding:13px 6px;}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" aria-label="Header">
+    <div class="header-wrap">
+      <a href="/" class="logo" aria-label="Homepage Paket Dieng">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
+        PutraTour
+      </a>
+      <nav aria-label="Navigasi utama">
+        <a href="hemat.html" class="active">Paket Hemat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+  <div class="spacer-header"></div>
+  <!-- DESKRIPSI -->
+  <div class="paket-desc">
+    🚐 <b>Paket Wisata Dieng Terlengkap — 1–4 Hari, Private & Corporate!</b><br>
+    <span class="desc-detail">
+      Jelajahi negeri di atas awan bareng tim lokal terbaik. Meeting point bisa dari Jogja, Semarang, Wonosobo, Solo, Purwokerto, Jakarta, Cilacap, Pekalongan, atau Magelang.
+      <br>Pilih durasi & rute favorit, semua bisa custom: dari one-day trip sampai family gathering.
+    </span>
+    <span class="desc-tag">Semua harga & fasilitas transparan. Bebas tentukan tanggal, peserta, hingga destinasi khusus!</span>
+  </div>
+
+  <!-- GRID PAKET HARI -->
+  <section class="paket-grid" id="durasi">
+    <div class="paket-card var1">
+      <div class="badge-paket">🌄 Paling Populer</div>
+      <div class="icon-paket">1️⃣</div>
+      <div class="paket-title">Paket 1 Hari</div>
+      <div class="paket-desc-card">Satu hari full keliling Dieng, sunrise di Sikunir, trip efektif tanpa nginap. Terfavorit untuk jadwal padat!</div>
+      <a href="1-hari.html" class="paket-btn">Lihat Paket</a>
+    </div>
+    <div class="paket-card var2">
+      <div class="badge-paket">🏕️ Best Seller</div>
+      <div class="icon-paket">2️⃣</div>
+      <div class="paket-title">Paket 2 Hari 1 Malam</div>
+      <div class="paket-desc-card">Lebih santai, nikmati malam di penginapan Dieng. Cocok buat couple, keluarga kecil, & sahabat.</div>
+      <a href="2-hari.html" class="paket-btn">Lihat Paket</a>
+    </div>
+    <div class="paket-card var3">
+      <div class="badge-paket">🚐 Favorit Komunitas</div>
+      <div class="icon-paket">3️⃣</div>
+      <div class="paket-title">Paket 3 Hari 2 Malam</div>
+      <div class="paket-desc-card">Eksplorasi ekstra lengkap: hidden gems Dieng, kuliner, hingga fun games group. Best for komunitas & corporate!</div>
+      <a href="3-hari.html" class="paket-btn">Lihat Paket</a>
+    </div>
+    <div class="paket-card var4">
+      <div class="badge-paket">🥇 Eksklusif & Custom</div>
+      <div class="icon-paket">4️⃣</div>
+      <div class="paket-title">Paket 4 Hari 3 Malam</div>
+      <div class="paket-desc-card">Waktu maksimal, itinerary full custom. Pilihan utama family besar, outing perusahaan, dan long vacation!</div>
+      <a href="4-hari.html" class="paket-btn">Lihat Paket</a>
+    </div>
+  </section>
+
+  <!-- GRID PAKET KOTA -->
+  <section class="kota-grid" id="kota">
+    <div class="kota-card">
+      <span class="kota-badge">Jogja</span>
+      <span class="icon-kota">🛫</span>
+      <div class="kota-title">Dari Jogja</div>
+      <div class="kota-desc">Private trip dari Yogyakarta, bisa lintas Borobudur, city tour, atau langsung ke Dieng. Favorit anak muda & keluarga!</div>
+      <a href="jogja.html" class="kota-btn">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#fd6185;">
+      <span class="kota-badge" style="background:#fd6185;">Semarang</span>
+      <span class="icon-kota">🚄</span>
+      <div class="kota-title">Dari Semarang</div>
+      <div class="kota-desc">Trip eksklusif dari Semarang, meeting point hotel/bandara/stasiun, plus bonus kuliner Ambarawa.</div>
+      <a href="semarang.html" class="kota-btn" style="background:#fd6185;">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#1976d2;">
+      <span class="kota-badge" style="background:#1976d2;">Wonosobo</span>
+      <span class="icon-kota">🗻</span>
+      <div class="kota-title">Dari Wonosobo</div>
+      <div class="kota-desc">Start terdekat ke Dieng, waktu tempuh singkat, itinerary fleksibel, support rombongan dan backpacker.</div>
+      <a href="wonosobo.html" class="kota-btn" style="background:#1976d2;">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#ff9800;">
+      <span class="kota-badge" style="background:#ff9800;">Solo</span>
+      <span class="icon-kota">🚐</span>
+      <div class="kota-title">Dari Solo</div>
+      <div class="kota-desc">Berangkat dari Solo, mampir ke destinasi budaya sebelum naik ke Dieng. Rekomendasi untuk trip family & pelajar!</div>
+      <a href="solo.html" class="kota-btn" style="background:#ff9800;">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#8e24aa;">
+      <span class="kota-badge" style="background:#8e24aa;">Purwokerto</span>
+      <span class="icon-kota">🚌</span>
+      <div class="kota-title">Dari Purwokerto</div>
+      <div class="kota-desc">Keberangkatan dari Purwokerto, transport all-in, makan lokal, dan penginapan nyaman. Pas untuk family trip!</div>
+      <a href="purwokerto.html" class="kota-btn" style="background:#8e24aa;">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#1976d2;">
+      <span class="kota-badge" style="background:#1976d2;">Jakarta</span>
+      <span class="icon-kota">✈️</span>
+      <div class="kota-title">Dari Jakarta</div>
+      <div class="kota-desc">Start dari Ibu Kota, pilihan transport pesawat/kereta, paket weekend, group, atau long trip tersedia!</div>
+      <a href="jakarta.html" class="kota-btn" style="background:#1976d2;">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#009688;">
+      <span class="kota-badge" style="background:#009688;">Cilacap</span>
+      <span class="icon-kota">🌊</span>
+      <div class="kota-title">Dari Cilacap</div>
+      <div class="kota-desc">Trip dari pesisir selatan, mobil nyaman, rute custom, cocok untuk private & group besar!</div>
+      <a href="cilacap.html" class="kota-btn" style="background:#009688;">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#ffb300;">
+      <span class="kota-badge" style="background:#ffb300;">Pekalongan</span>
+      <span class="icon-kota">🏞️</span>
+      <div class="kota-title">Dari Pekalongan</div>
+      <div class="kota-desc">Jemput langsung kota batik, trip fun, itinerary fleksibel, cocok buat arisan, keluarga, & komunitas!</div>
+      <a href="pekalongan.html" class="kota-btn" style="background:#ffb300;">Lihat Detail</a>
+    </div>
+    <div class="kota-card" style="border-left-color:#fd6185;">
+      <span class="kota-badge" style="background:#fd6185;">Magelang</span>
+      <span class="icon-kota">🏯</span>
+      <div class="kota-title">Dari Magelang</div>
+      <div class="kota-desc">Paket combo Borobudur + Dieng. Trip edukasi, family, hingga sekolah. Fasilitas super lengkap.</div>
+      <a href="magelang.html" class="kota-btn" style="background:#fd6185;">Lihat Detail</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <h2>Pertanyaan Populer Tentang Paket Wisata Dieng</h2>
+    <details>
+      <summary>Bagaimana sistem pemesanan & pembayaran?</summary>
+      <div>Pilih paket dan kota, konsultasi dengan admin, tentukan tanggal & fasilitas, lalu booking dengan DP. Pembayaran akhir saat hari H, invoice resmi dijamin aman.</div>
+    </details>
+    <details>
+      <summary>Bisa custom rute, destinasi, atau upgrade fasilitas?</summary>
+      <div>Bisa! Semua paket bisa diubah sesuai request: destinasi, hotel, kendaraan, makan, guide, hingga agenda spesial (foto, games, atau acara).</div>
+    </details>
+    <details>
+      <summary>Minimal & maksimal peserta?</summary>
+      <div>1 peserta bisa (private), maksimal hingga ratusan peserta untuk rombongan perusahaan/sekolah.</div>
+    </details>
+    <details>
+      <summary>Paket sudah termasuk apa saja?</summary>
+      <div>Transportasi, tiket masuk objek wisata, makan/minum, penginapan (kalau trip lebih dari 1 hari), guide lokal, dan dokumentasi (beberapa paket).</div>
+    </details>
+    <details>
+      <summary>Bisa berangkat dari kota lain?</summary>
+      <div>Bisa, tinggal konsultasi dengan admin. Penjemputan dan itinerary dijamin fleksibel, tanpa biaya tersembunyi.</div>
+    </details>
+  </section>
+
+  <footer class="footer">
+   <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+© 2025 Tour Dieng 
+  </footer>
+</body>
+</html>

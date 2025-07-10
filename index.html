@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+<title>Paket Wisata Dieng Private Trip – Itinerary Custom, Harga Hemat, Fasilitas Lengkap</title>
+<meta name="description" content="Pilih paket wisata Dieng private trip: itinerary fleksibel, fasilitas lengkap, harga transparan, dan bisa request destinasi. Cocok untuk solo, couple, atau rombongan!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://paketwisatatourdieng.com">
+  <style>
+    :root {
+      --primary: #009688;
+      --primary-dark: #026c5b;
+      --secondary: #fffbe8;
+      --accent: #ffb300;
+      --footer: #19335a;
+      --radius: 2.2rem;
+      --shadow: 0 8px 32px rgba(0,0,0,0.07);
+      --transition: .19s cubic-bezier(.6,.3,0,1.2);
+    }
+    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
+    body { min-height:100vh; }
+    /* HEADER */
+    .header {
+      width: 100%;
+      background: var(--footer);
+      color: #fff;
+      position: fixed;
+      top: 0; left: 0; z-index: 1000;
+      box-shadow: 0 4px 18px #1d355726;
+      padding: 0;
+    }
+    .header-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      height: 66px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .logo svg { margin-right: 11px; }
+    nav {
+      display: flex;
+      gap: 18px;
+    }
+    nav a {
+      color: #fffbe8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 4px 13px;
+      border-radius: 16px;
+      transition: background .17s;
+    }
+    nav a:hover, nav a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+    .spacer-header { height: 66px; }
+    /* HERO */
+    .hero {
+      background: linear-gradient(90deg, #009688 72%, #fffbe8 100%);
+      padding: 0px 0 74px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .hero-content { position:relative; z-index:3;}
+    .hero h1 { font-size:2.45rem; color:#fff; font-weight:800; margin-bottom:13px; text-shadow: 0 2px 10px #00968828;}
+    .hero p { color:#fffbe8; font-size:1.13rem; font-weight:600; max-width:540px; margin:auto; text-shadow:0 2px 8px #00968833;}
+    .hero-img {
+      object-fit:cover;
+      object-position:center;
+      max-width:100%;
+      width: 100%;
+      height: auto;
+      border-radius:1.2rem;
+      margin-top:24px;
+      box-shadow:0 4px 32px #00968818;
+      z-index:2;
+      position:relative;
+      display: block;
+    }
+    /* KARTU GRID */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(268px,1fr));
+      gap: 34px;
+      max-width: 1100px;
+      margin: -55px auto 0;
+      z-index:2;
+      position:relative;
+    }
+    .trip-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 60px 22px 32px 22px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+      border-bottom: 4px solid var(--primary);
+      min-height:330px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      outline: 0 solid transparent;
+    }
+    .trip-card:hover, .trip-card:focus-within {
+      transform: translateY(-9px) scale(1.035) rotate(-0.5deg);
+      box-shadow: 0 12px 48px #00968828;
+      outline: 2px solid var(--primary);
+    }
+    .trip-badge {
+      position: absolute;
+      left: 50%; top: 14px; transform: translateX(-50%);
+      background: var(--accent);
+      color: #fff;
+      font-weight: 900;
+      padding: 8px 24px;
+      border-radius: 34px;
+      font-size: 1rem;
+      box-shadow: 0 2px 16px #ffb30025;
+      letter-spacing:.02em;
+      z-index:2;
+      animation: badgePop .8s cubic-bezier(.2,2,.5,.9);
+    }
+    @keyframes badgePop {
+      0% {transform:translateX(-50%) scale(0.5);}
+      65%{transform:translateX(-50%) scale(1.17);}
+      100%{transform:translateX(-50%) scale(1);}
+    }
+    .trip-icon {
+      font-size:2.8rem;
+      margin-top:18px;
+      margin-bottom:13px;
+      user-select: none;
+      filter: drop-shadow(0 2px 3px #fffbe8cc);
+    }
+    .trip-title {
+      font-size:1.31rem;
+      font-weight:800;
+      color: var(--primary);
+      margin:0 0 6px;
+      letter-spacing:.01em;
+    }
+    .trip-desc {
+      font-size:1.04rem;
+      color:#19335abb;
+      margin-bottom:21px;
+      min-height:42px;
+    }
+    .trip-btn {
+      margin-top: auto;
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      border-radius: 28px;
+      font-size: 1.09rem;
+      padding: 10px 38px 10px 28px;
+      text-decoration: none;
+      box-shadow: 0 2px 16px #00968814;
+      border: none;
+      letter-spacing: .02em;
+      transition: background var(--transition), transform var(--transition);
+      position: relative;
+      cursor: pointer;
+    }
+    .trip-btn::after {
+      content: '→';
+      margin-left: 8px;
+      font-weight: 900;
+      font-size: 1.1em;
+      transition: margin-left .17s cubic-bezier(.5,.3,.4,1.2);
+    }
+    .trip-btn:hover, .trip-btn:focus {
+      background: #03685a;
+      transform: scale(1.03) translateY(-2px);
+    }
+    .trip-btn:hover::after, .trip-btn:focus::after { margin-left:15px;}
+    /* VARIAN WARNA KARTU */
+    .var1{border-bottom-color:#ffb300;}
+    .var2{border-bottom-color:#fd6185;}
+    .var3{border-bottom-color:#8e24aa;}
+    .var4{border-bottom-color:#26c6da;}
+    .var5{border-bottom-color:#7c3aed;}
+    .var6{border-bottom-color:#ff9800;}
+    .var7{border-bottom-color:#00b870;}
+    .var8{border-bottom-color:#1976d2;}
+    .var9{border-bottom-color:#009688;}
+    .var10{border-bottom-color:#ffc107;}
+    /* FAQ */
+    .faq-section {
+      max-width: 730px;
+      margin:60px auto 0;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: var(--shadow);
+      padding:32px 26px 34px 26px;
+    }
+    .faq-section h2 {margin:0 0 17px; font-size:1.27rem;}
+    details {margin-bottom:12px;}
+    summary {
+      font-weight:700;
+      font-size:1.08rem;
+      cursor:pointer;
+      transition:color .13s;
+      color:var(--primary);
+      outline:none;
+    }
+    details[open] summary {color:var(--accent);}
+    details div {margin:7px 0 0 14px; color:#222;}
+    /* FOOTER */
+    .footer {
+      margin-top:54px;
+      background: var(--footer);
+      color: #fff;
+      text-align: center;
+      padding: 25px 0 12px 0;
+      font-size:1rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+      letter-spacing:.01em;
+      box-shadow: 0 -4px 24px #19335a13;
+    }
+    .footer a { color: #ffe16b; text-decoration: underline; }
+    /* Responsive */
+    @media(max-width:600px){
+      .hero h1 {font-size:1.22rem;}
+      .header-wrap { padding: 0 9px; }
+      .card-grid{gap:13px;}
+      .faq-section{padding:14px 6px 16px 6px;}
+      .main{padding:7px;}
+      .logo{font-size:1rem;}
+      nav a{font-size:.98rem;padding:4px 7px;}
+      .hero-img{margin-top:14px;}
+    }
+    @media(max-width:600px){
+      .trip-card { padding-top: 38px; }
+      .trip-badge { top: 6px; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-wrap">
+      <a href="/" class="logo">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
+        PutraTour
+      </a>
+      <nav>
+        <a href="hemat.html" class="active">Paket Hemat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+  <div class="spacer-header"></div>
+  <img 
+    src="paket-dieng.png"
+    alt="Private Trip Dieng - Banner"
+    width="1200"
+    height="420"
+    style="display:block;max-width:100%;width:100%;height:auto;margin:0 auto;border-radius:0 0 1.3rem 1.3rem;box-shadow:0 6px 32px #00968818;"
+    loading="eager"
+  />
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Paket Wisata Dieng — Pilih Sesuai Jumlah Peserta</h1>
+      <p>
+        Mau solo trip, couple, atau rombongan? Di sini kamu bisa pilih <b>private trip Dieng</b> dari <b>1–10 orang</b>! Semua itinerary & fasilitas bisa request. Dijamin private, tanpa campur peserta lain, dan bonus spesial.
+      </p>
+    </div>
+
+  </section>
+  <!-- KARTU PILIHAN 1–10 ORANG -->
+  <section class="card-grid" id="paket">
+    <div class="trip-card var1">
+      <div class="trip-badge">Solo Unik</div>
+      <div class="trip-icon">👤</div>
+      <div class="trip-title">1 Orang</div>
+      <div class="trip-desc">Jelajah Dieng sendirian? Bebas custom rute & waktu, dijamin personal dan eksklusif!</div>
+      <a href="1-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var2">
+      <div class="trip-badge">Favorit Couple</div>
+      <div class="trip-icon">💑</div>
+      <div class="trip-title">2 Orang</div>
+      <div class="trip-desc">Liburan romantis atau sahabat trip. Cocok untuk honeymoon atau bestie!</div>
+      <a href="2-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var3">
+      <div class="trip-badge">Best Seller</div>
+      <div class="trip-icon">👨‍👩‍👦</div>
+      <div class="trip-title">3 Orang</div>
+      <div class="trip-desc">Trip bertiga, tetap private dan bebas tentukan destinasi & waktu.</div>
+      <a href="3-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var4">
+      <div class="trip-badge">Keluarga Kecil</div>
+      <div class="trip-icon">👨‍👩‍👧‍👦</div>
+      <div class="trip-title">4 Orang</div>
+      <div class="trip-desc">Paket pas buat keluarga kecil atau bestie geng, kendaraan lega & nyaman.</div>
+      <a href="4-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var5">
+      <div class="trip-badge">Terlaris</div>
+      <div class="trip-icon">🚌</div>
+      <div class="trip-title">5 Orang</div>
+      <div class="trip-desc">Cocok untuk geng kantor atau keluarga, fasilitas makin lengkap, makin hemat!</div>
+      <a href="5-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var6">
+      <div class="trip-badge">Rombongan Mini</div>
+      <div class="trip-icon">👬👬👬</div>
+      <div class="trip-title">6 Orang</div>
+      <div class="trip-desc">Trip seru buat komunitas mini, teman kantor, atau keluarga besar.</div>
+      <a href="6-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var7">
+      <div class="trip-badge">Super Hemat</div>
+      <div class="trip-icon">👫👬👭</div>
+      <div class="trip-title">7 Orang</div>
+      <div class="trip-desc">Satu geng, satu mobil, private tanpa dicampur peserta lain.</div>
+      <a href="7-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var8">
+      <div class="trip-badge">Reuni Mini</div>
+      <div class="trip-icon">🎉🧑‍🤝‍🧑🎉</div>
+      <div class="trip-title">8 Orang</div>
+      <div class="trip-desc">Paket favorit buat outing, reuni, atau keluarga besar. Harga makin hemat!</div>
+      <a href="8-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var9">
+      <div class="trip-badge">Fun Group</div>
+      <div class="trip-icon">🤩🚌🎉</div>
+      <div class="trip-title">9 Orang</div>
+      <div class="trip-desc">Cocok buat trip kantor, komunitas, dan group gathering. Booking gampang!</div>
+      <a href="9-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+    <div class="trip-card var10">
+      <div class="trip-badge">Super Rombongan</div>
+      <div class="trip-icon">🥳🚌👫👫</div>
+      <div class="trip-title">10 Orang</div>
+      <div class="trip-desc">Paket paling hemat, mobil besar, itinerary fleksibel, semua all-in!</div>
+      <a href="10-orang.html" class="trip-btn">Pilih Paket</a>
+    </div>
+  </section>
+  <!-- FAQ SUPER SEO -->
+  <section class="faq-section" id="faq">
+    <h2>Pertanyaan Umum Private Trip Dieng</h2>
+    <details>
+      <summary>Private trip itu apa?</summary>
+      <div>Private trip Dieng adalah wisata khusus sesuai jumlah peserta (1–10 orang), tanpa digabung peserta lain. Rute, jadwal, dan fasilitas bisa kamu request.</div>
+    </details>
+    <details>
+      <summary>Minimal & maksimal peserta?</summary>
+      <div>Bisa dari 1 orang (solo traveler) sampai maksimal 10 orang per mobil. Lebih dari 10 orang bisa dibuat beberapa mobil privat.</div>
+    </details>
+    <details>
+      <summary>Apakah harga makin murah kalau rombongan?</summary>
+      <div>Ya, makin banyak peserta, makin hemat per orang! Semua fasilitas tetap lengkap.</div>
+    </details>
+    <details>
+      <summary>Bisa request destinasi & penjemputan?</summary>
+      <div>100% bisa, bahkan jadwal pun bebas pilih. Konsultasikan ke admin tanpa biaya tambahan.</div>
+    </details>
+    <details>
+      <summary>Cara booking?</summary>
+      <div>Tinggal klik paket di atas, lanjutkan ke WhatsApp admin, dan kamu bisa diskusi langsung.</div>
+    </details>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+   <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+© 2025 Tour Dieng 
+  </footer>
+</body>
+</html>

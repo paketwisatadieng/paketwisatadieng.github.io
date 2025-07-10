@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak & Reservasi Paket Wisata Dieng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="/kontak.html">
+  <style>
+    :root {
+      --primary: #009688;
+      --accent: #ffb300;
+      --footer: #19335a;
+      --radius: 2.2rem;
+      --shadow: 0 8px 32px rgba(0,0,0,0.07);
+    }
+    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:#fffbe8; color:var(--footer);}
+    body { min-height:100vh; }
+    .header {
+      width: 100%;
+      background: var(--footer);
+      color: #fff;
+      position: fixed;
+      top: 0; left: 0; z-index: 1000;
+      box-shadow: 0 4px 18px #1d355726;
+    }
+    .header-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 26px;
+      height: 68px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.44rem;
+      font-weight: 900;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .logo svg { margin-right: 13px; }
+    nav { display: flex; gap: 22px; }
+    nav a {
+      color: #fffbe8;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.01rem;
+      padding: 6px 17px;
+      border-radius: 18px;
+      transition: background .17s;
+      letter-spacing:.02em;
+    }
+    nav a:hover, nav a.active { background: var(--primary); color: #fff; }
+    .spacer-header { height: 68px; }
+    .kontak-wrap {
+      max-width: 540px;
+      margin: 54px auto 42px auto;
+      background: #fff;
+      border-radius: 1.7rem;
+      box-shadow: 0 8px 32px #00968813;
+      padding: 42px 22px 32px 22px;
+    }
+    .kontak-title {
+      font-size: 1.33rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 21px;
+      text-align: center;
+      letter-spacing:.01em;
+    }
+    form label { display:block; font-weight:700; margin:22px 0 6px 0;}
+    select, input[type="number"], input[type="date"] {
+      width:100%;
+      padding:12px 11px;
+      border-radius:13px;
+      border:1.7px solid #e0f6f1;
+      background:#fffbe8;
+      font-size:1.09rem;
+      margin-bottom:5px;
+      outline:none;
+      font-family:inherit;
+      transition:border .14s;
+      font-weight:600;
+      color:#19335a;
+    }
+    select:focus, input:focus { border:1.7px solid var(--primary);}
+    .btn-wa {
+      margin-top: 32px;
+      width:100%;
+      display: block;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 900;
+      border-radius: 22px;
+      font-size: 1.11rem;
+      padding: 14px 0 14px 0;
+      text-decoration: none;
+      box-shadow: 0 2px 14px #00968812;
+      border: none;
+      letter-spacing: .02em;
+      cursor: pointer;
+      transition: background .16s, transform .16s;
+      position: relative;
+    }
+    .btn-wa:hover, .btn-wa:focus {
+      background: #03685a;
+      transform: scale(1.035) translateY(-1px);
+    }
+    .wa-info {display:none;}
+    .footer {
+      margin-top:54px;
+      background: var(--footer);
+      color: #fff;
+      text-align: center;
+      padding: 25px 0 12px 0;
+      font-size:1rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+      letter-spacing:.01em;
+      box-shadow: 0 -4px 24px #19335a13;
+    }
+    .footer a { color: #ffe16b; text-decoration: underline; font-weight:700;}
+    @media(max-width:700px){
+      .header-wrap { padding: 0 10px; }
+      .kontak-wrap{padding:13px 6px 13px 6px;}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" aria-label="Header">
+    <div class="header-wrap">
+      <a href="/" class="logo" aria-label="Homepage Paket Dieng">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
+        PutraTour
+      </a>
+      <nav aria-label="Navigasi utama">
+        <a href="hemat.html" class="active">Paket Hemat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+  <div class="spacer-header"></div>
+
+<main>
+  <div class="kontak-wrap">
+    <div class="kontak-title">Form Kontak & Reservasi<br>Paket Wisata Dieng</div>
+    <form id="formKontak" autocomplete="off" onsubmit="return submitWA();">
+      <label for="paket">Pilih Paket</label>
+      <select id="paket" name="paket" required>
+        <option value="" disabled selected>Pilih paket</option>
+        <option value="1 Hari">1 Hari</option>
+        <option value="2 Hari 1 Malam">2 Hari 1 Malam</option>
+        <option value="3 Hari 2 Malam">3 Hari 2 Malam</option>
+        <option value="4 Hari 3 Malam">4 Hari 3 Malam</option>
+      </select>
+      <label for="kota">Meeting Point / Penjemputan</label>
+      <select id="kota" name="kota" required>
+        <option value="" disabled selected>Pilih kota penjemputan</option>
+        <option>Jogja</option>
+        <option>Semarang</option>
+        <option>Wonosobo</option>
+        <option>Solo</option>
+        <option>Purwokerto</option>
+        <option>Jakarta</option>
+        <option>Cilacap</option>
+        <option>Pekalongan</option>
+        <option>Magelang</option>
+      </select>
+      <label for="jumlah">Jumlah Peserta</label>
+      <input type="number" id="jumlah" name="jumlah" min="1" max="100" placeholder="Isi jumlah peserta" required>
+      <label for="tanggal">Tanggal Keberangkatan</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+      <button type="submit" class="btn-wa">Kirim ke WhatsApp</button>
+    </form>
+    <span class="wa-info" id="waNo"></span>
+
+    <!-- Info PutraTour & Jam Operasional -->
+    <div style="margin-top:30px;line-height:1.7;border-top:1px dashed #e3e3e3;padding-top:22px;font-size:1.04rem;">
+      <b>PutraTour</b><br>
+      Wonosobo, Jawa Tengah 56351<br>
+      <b>Jam Operasional:</b><br>
+      Senin–Jumat: 08.00–17.00 WIB<br>
+      Sabtu–Minggu: 09.00–16.00 WIB
+    </div>
+  </div>
+</main>
+
+  <footer class="footer">
+   <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+© 2025 Tour Dieng 
+  </footer>
+
+  <script>
+    // Disable tanggal sebelum hari ini
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1; // Months start at 0!
+    let dd = today.getDate();
+    if(mm<10) mm = '0'+mm;
+    if(dd<10) dd = '0'+dd;
+    const minDate = yyyy + '-' + mm + '-' + dd;
+    document.getElementById('tanggal').setAttribute('min', minDate);
+
+    // Sembunyikan 
+    function getNoWA() {
+      // No WA dipecah 
+      return "62" + "811" + "2828" + "283";
+    }
+
+    // Tampilkan WA ke user (di footer)
+    function showWA() {
+      const el = document.getElementById('waNo');
+      el.innerHTML = '0811-2828-283';
+      el.style.display = 'inline-block';
+      alert('Nomor WhatsApp: 0811-2828-283');
+    }
+
+    // Submit ke WhatsApp
+    function submitWA() {
+      var paket = document.getElementById('paket').value;
+      var kota = document.getElementById('kota').value;
+      var jumlah = document.getElementById('jumlah').value;
+      var tanggal = document.getElementById('tanggal').value;
+      if (!paket || !kota || !jumlah || !tanggal) return false;
+
+      // Format pesan WhatsApp
+      var msg = `Halo admin Paket Dieng%0ASaya ingin reservasi:%0A------------------------%0A*Paket*: ${paket}%0A*Mepo*: ${kota}%0A*Jumlah peserta*: ${jumlah}%0A*Tgl berangkat*: ${tanggal}%0A------------------------%0AMohon info lengkapnya, terima kasih.`;
+      var no = getNoWA();
+      var url = `https://wa.me/${no}?text=${msg}`;
+      window.open(url, "_blank");
+      return false;
+    }
+  </script>
+</body>
+</html>
