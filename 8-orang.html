@@ -3,57 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <title>Private Trip Dieng 8 Orang | Rombongan Bahagia</title>
+  <meta name="description" content="Private trip Dieng 8 orang, full private, itinerary custom, mobil Hiace/ELF, fasilitas lengkap. Cocok outing, reuni, atau keluarga besar. Booking di PutraTour.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="/8-orang.html">
   <style>
-    body {margin:0;font-family:'Urbanist',Arial,sans-serif;background:#e3eafc;color:#163259;}
-    .header {background:#1769aa;color:#fff;text-align:center;padding:30px 0 16px;box-shadow:0 2px 12px #1769aa19;}
-    .icon {font-size:3.3rem;}
-    .main {max-width:660px;margin:40px auto 0;background:#fff;border-radius:34px;box-shadow:0 12px 32px #1769aa0d;padding:36px 32px;}
-    .badge {background:#b3d1f9;color:#1769aa;font-weight:700;display:inline-block;border-radius:36px;padding:7px 22px;margin-bottom:14px;}
-    .headline {font-size:1.34rem;margin:10px 0 11px;}
-    .desc {margin-bottom:16px;}
+    :root {
+      --primary: #009688;
+      --accent: #1769aa;
+      --secondary: #e3eafc;
+      --footer: #19335a;
+      --radius: 2.2rem;
+      --shadow: 0 8px 32px rgba(0,0,0,0.07);
+    }
+    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
+    body { min-height:100vh; }
+    /* HEADER MASTER */
+    .header {
+      width: 100%;
+      background: var(--footer);
+      color: #fff;
+      position: fixed;
+      top: 0; left: 0; z-index: 1000;
+      box-shadow: 0 4px 18px #1d355726;
+      padding: 0;
+    }
+    .header-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      height: 66px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .logo svg { margin-right: 11px; }
+    nav { display: flex; gap: 18px; }
+    nav a {
+      color: #fffbe8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 4px 13px;
+      border-radius: 16px;
+      transition: background .17s;
+    }
+    nav a:hover, nav a.active { background: var(--primary); color: #fff; }
+    .spacer-header { height: 66px; }
+    /* MAIN CONTENT */
+    .main {
+      max-width:660px;
+      margin:44px auto 32px auto;
+      background:#fff;
+      border-radius:34px;
+      box-shadow:0 12px 32px #1769aa0d;
+      padding:36px 32px;
+      position:relative;
+      z-index:2;
+    }
+    .badge {
+      background:#b3d1f9;
+      color:var(--accent);
+      font-weight:700;
+      display:inline-block;
+      border-radius:36px;
+      padding:7px 22px;
+      margin-bottom:14px;
+      font-size:1.04rem;
+    }
+    .headline {
+      font-size:1.34rem;
+      margin:10px 0 11px;
+      font-weight:900;
+      color:var(--accent);
+      letter-spacing:-.01em;
+    }
+    .desc {margin-bottom:16px;font-size:1.08rem;}
     .itinerary h3 {margin-bottom:7px;}
-    .itinerary ul {margin:0 0 0 17px;}
-    .fasilitas {display:flex;flex-wrap:wrap;gap:8px 9px;margin:14px 0 21px;}
-    .fasilitas span {background:#e3eafc;color:#1769aa;border-radius:13px;padding:7px 12px;font-weight:600;}
-    .cta {display:block;background:#1769aa;color:#fff;text-align:center;padding:12px 0;border-radius:38px;font-weight:700;text-decoration:none;font-size:1.13rem;margin:17px 0 0;transition:background 0.14s;}
+    .itinerary ul {margin:0 0 0 17px;padding:0;}
+    .itinerary li {margin-bottom:6px;}
+    .fasilitas {
+      display:flex;flex-wrap:wrap;gap:8px 9px;margin:14px 0 21px;
+    }
+    .fasilitas span {
+      background:#e3eafc;
+      color:#1769aa;
+      border-radius:13px;
+      padding:7px 12px;
+      font-weight:600;
+      font-size:1.01rem;
+    }
+    .cta {
+      display:block;
+      background:var(--accent);
+      color:#fff;
+      text-align:center;
+      padding:12px 0;
+      border-radius:38px;
+      font-weight:700;
+      text-decoration:none;
+      font-size:1.13rem;
+      margin:17px 0 0;
+      transition:background 0.14s;
+    }
     .cta:hover {background:#153763;}
-    .faq-table {background:#e3eafc;padding:18px 14px;border-radius:17px;margin:24px 0 0;}
+    .faq-table {
+      background:#e3eafc;
+      padding:18px 14px;
+      border-radius:17px;
+      margin:24px 0 0;
+      font-size:1rem;
+    }
     .faq-table table {width:100%;border-collapse:collapse;}
     .faq-table th, .faq-table td {padding:7px 5px;text-align:left;}
     .faq-table th {font-weight:700;color:#163259;}
-    .footer {background:#1769aa;color:#fff;text-align:center;padding:14px 0;margin-top:37px;}
-    @media(max-width:700px){.main{padding:14px 7px;}}
+    .footer {
+      margin-top:54px;
+      background: var(--footer);
+      color: #fff;
+      text-align: center;
+      padding: 25px 0 12px 0;
+      font-size:1rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+      letter-spacing:.01em;
+      box-shadow: 0 -4px 24px #19335a13;
+    }
+    .footer a { color: #ffe16b; text-decoration: underline; }
+    @media(max-width:700px){
+      .header-wrap { padding: 0 9px; }
+      .main{padding:14px 7px;}
+      .headline{font-size:1.06rem;}
+    }
   </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header class="header">
-    <div class="icon">🎉🧑‍🤝‍🧑🎉</div>
-    <h1>Private Trip Dieng 8 Orang</h1>
-    <div style="opacity:0.8;">Rombongan Bahagia</div>
+    <div class="header-wrap">
+      <a href="/" class="logo">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
+        PutraTour
+      </a>
+      <nav>
+        <a href="hemat.html">Paket Hemat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
   </header>
-<a href="/" 
-  style="
-    display:inline-block;
-    margin:28px 0 16px 0;
-    padding:9px 28px 9px 18px;
-    background:#009688;
-    color:#fff;
-    font-weight:800;
-    font-size:1.07rem;
-    border-radius:30px;
-    box-shadow:0 2px 16px #00968821;
-    text-decoration:none;
-    letter-spacing:0.01em;
-    transition:background .17s,transform .15s;
-    position:relative;
-  "
-  onmouseover="this.style.background='#03685a';this.style.textDecoration='underline'"
-  onmouseout="this.style.background='#009688';this.style.textDecoration='none'"
->
-  ← Kembali ke Home
-</a>
+  <div class="spacer-header"></div>
 
   <main class="main">
     <div class="badge">Best Seller</div>
@@ -80,7 +190,6 @@
       <span>Dokumentasi</span>
       <span>Snack & minum</span>
     </div>
-    <a href="https://wa.me/628112828283?text=Private+Trip+Dieng+8+Orang" class="cta">Booking WhatsApp</a>
     <div class="faq-table">
       <table>
         <tr><th>Pertanyaan</th><th>Jawaban</th></tr>
@@ -91,7 +200,8 @@
     </div>
   </main>
   <footer class="footer">
-    © 2025 Private Trip Dieng 8 Orang | Putra Tour
+    <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+    © 2025 Tour Dieng 
   </footer>
 </body>
 </html>
