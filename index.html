@@ -2,14 +2,14 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-<title>Paket Wisata Dieng Private Trip – Itinerary Custom, Harga Hemat, Fasilitas Lengkap</title>
-<meta name="description" content="Pilih paket wisata Dieng private trip: itinerary fleksibel, fasilitas lengkap, harga transparan, dan bisa request destinasi. Cocok untuk solo, couple, atau rombongan!" />
+  <title>Paket Wisata Dieng Private Trip – Itinerary Custom, Harga Hemat, Fasilitas Lengkap</title>
+  <meta name="description" content="Pilih paket wisata Dieng private trip: itinerary fleksibel, fasilitas lengkap, harga transparan, dan bisa request destinasi. Cocok untuk solo, couple, atau rombongan!"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="canonical" href="https://paketwisatatourdieng.com">
   <style>
     :root {
@@ -23,8 +23,8 @@
       --transition: .19s cubic-bezier(.6,.3,0,1.2);
     }
     html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
-    body { min-height:100vh; }
-    /* HEADER */
+    body { min-height:100vh; line-height:1.67; }
+    section { margin-bottom: 44px; }
     .header {
       width: 100%;
       background: var(--footer);
@@ -71,14 +71,14 @@
       color: #fff;
     }
     .spacer-header { height: 66px; }
-    /* HERO */
     .hero {
       background: linear-gradient(90deg, #009688 72%, #fffbe8 100%);
-      padding: 0px 0 74px 0;
+      padding: 0px 0 94px 0;
       text-align: center;
       position: relative;
       overflow: hidden;
       box-shadow: var(--shadow);
+      margin-bottom: 64px;
     }
     .hero-content { position:relative; z-index:3;}
     .hero h1 { font-size:2.45rem; color:#fff; font-weight:800; margin-bottom:13px; text-shadow: 0 2px 10px #00968828;}
@@ -96,13 +96,232 @@
       position:relative;
       display: block;
     }
-    /* KARTU GRID */
+    /* ALASAN PILIH */
+    .alasan-pilih {
+      max-width: 740px;
+      margin: 60px auto 52px auto;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: var(--shadow);
+      padding: 44px 38px 32px 44px;
+      color: #19335a;
+      font-size: 1.1rem;
+      letter-spacing: .01em;
+    }
+    .alasan-pilih h2 {
+      font-size: 1.23rem;
+      margin: 0 0 17px 0;
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: .01em;
+    }
+    .alasan-pilih ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .alasan-pilih li {
+      margin-bottom: 20px;
+      padding-left: 0;
+      line-height: 1.52;
+      font-weight: 600;
+    }
+    .alasan-pilih b {
+      color: var(--primary-dark);
+    }
+    /* KARTU KHUSUS & PRIVATE */
+    .khusus-wrap {
+      max-width: 900px;
+      margin: 0 auto 54px auto;
+      background: #fff;
+      border-radius: 1.6rem;
+      box-shadow: var(--shadow);
+      padding: 38px 32px 32px 32px;
+    }
+    .khusus-wrap h2 {
+      font-size: 1.28rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 0 0 18px 0;
+    }
+    .khusus-desc {
+      font-size: 1.04rem;
+      color: #313a48c9;
+      margin-bottom: 33px;
+    }
+    .khusus-cards {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .khusus-card {
+      background: #f9fbfe;
+      border-radius: 1.15rem;
+      box-shadow: 0 4px 18px #00968810;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 22px 32px 20px 22px;
+      min-width: 300px;
+      max-width: 390px;
+      flex: 1 1 320px;
+      margin-bottom: 13px;
+      transition: transform .17s, box-shadow .18s;
+      border: 1.5px solid #e8eeff;
+      position: relative;
+    }
+    .khusus-card:hover { 
+      transform: translateY(-4px) scale(1.018); 
+      box-shadow: 0 12px 32px #0096881c;
+      border-color: #b2dfdb;
+    }
+    .khusus-ikon {
+      font-size: 2.4rem;
+      margin-right: 15px;
+      margin-top: 6px;
+      user-select: none;
+      filter: drop-shadow(0 1px 4px #fff);
+    }
+    .khusus-main {
+      flex: 1;
+    }
+    .khusus-judul {
+      font-size: 1.13rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 2px;
+      letter-spacing: .01em;
+    }
+    .khusus-harga {
+      font-size: 1.06rem;
+      font-weight: 600;
+      color: #19335ad6;
+      margin-bottom: 7px;
+    }
+    .khusus-harga b { color: var(--accent); font-size:1.13em; }
+    .khusus-satuan { font-weight: 400; color: #626e8b; font-size:.98em; margin-left:2px; }
+    .khusus-fasilitas {
+      font-size: .96rem;
+      color: #00897b;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .khusus-text {
+      font-size: .99rem;
+      color: #222b45c7;
+      margin-bottom: 17px;
+      min-height:40px;
+    }
+    .khusus-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      border-radius: 22px;
+      font-size: .98rem;
+      padding: 8px 28px 8px 17px;
+      text-decoration: none;
+      box-shadow: 0 2px 10px #00968818;
+      border: none;
+      letter-spacing: .01em;
+      transition: background .15s, transform .15s;
+      position: relative;
+      cursor: pointer;
+    }
+    .khusus-btn:hover { background: #026c5b; transform: scale(1.04) translateY(-2px);}
+    .khusus-btn::after {
+      content: '→';
+      margin-left: 7px;
+      font-weight: 900;
+      font-size: 1.09em;
+      transition: margin-left .12s;
+    }
+    /* INFO CUACA & PEMBAYARAN */
+    .info-cuate-pay {
+      display: flex;
+      gap: 28px;
+      max-width: 900px;
+      margin: 0 auto 46px auto;
+      flex-wrap: wrap;
+    }
+    .cuaca-box, .pay-box {
+      flex: 1 1 300px;
+      background: #f9fbfe;
+      border-radius: 1.15rem;
+      box-shadow: 0 4px 18px #0096880a;
+      padding: 28px 26px 22px 26px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      border: 1.5px solid #e8eeff;
+      min-width: 0;
+    }
+    .cuaca-box { margin-bottom: 0; }
+    .cuaca-ikon, .pay-ikon {
+      font-size: 2.25rem;
+      margin-right: 15px;
+      margin-top: 5px;
+      user-select: none;
+      filter: drop-shadow(0 1px 4px #fff);
+    }
+    .cuaca-judul, .pay-judul {
+      font-weight: 800;
+      font-size: 1.12rem;
+      color: var(--primary-dark);
+      margin-bottom: 2px;
+    }
+    .cuaca-suhu {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #19335ad6;
+      margin-bottom: 7px;
+    }
+    .cuaca-ket {
+      font-size: .96rem;
+      color: #626e8b;
+      font-weight: 400;
+      margin-left: 7px;
+    }
+    .cuaca-desc, .pay-desc {
+      font-size: .99rem;
+      color: #21334bcb;
+      margin-top: 3px;
+      line-height: 1.54;
+    }
+    .pay-bank {
+      font-size: 1.07rem;
+      font-weight: 700;
+      color: #009688;
+      margin-bottom: 7px;
+      margin-top: 4px;
+    }
+    @media(max-width:900px){
+      .khusus-cards { flex-direction: column; gap: 17px; }
+      .khusus-card { max-width:100%; padding: 19px 17px 16px 13px;}
+      .alasan-pilih { padding: 22px 8px 15px 12px; }
+      .khusus-wrap { padding: 15px 6px 10px 7px; }
+      .info-cuate-pay { flex-direction: column; gap: 17px; }
+      .cuaca-box, .pay-box { padding: 17px 13px 14px 11px; }
+    }
+    @media(max-width:600px){
+      .hero h1 {font-size:1.13rem;}
+      .alasan-pilih {padding:10px 5px 8px 6px; margin-top:36px; margin-bottom:32px;}
+      .khusus-wrap {padding:8px 3px 8px 3px;}
+      .faq-section{padding:11px 4px 10px 4px;}
+      .trip-card {padding-top:25px;}
+      .trip-badge {top:4px;font-size:.93rem;}
+      .card-grid {gap:9px;}
+      .info-cuate-pay { gap: 9px; }
+      .cuaca-box, .pay-box { padding: 10px 6px 10px 6px; }
+    }
+    /* KARTU PILIHAN */
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(268px,1fr));
       gap: 34px;
       max-width: 1100px;
-      margin: -55px auto 0;
+      margin: 0 auto 58px auto;
       z-index:2;
       position:relative;
     }
@@ -196,7 +415,6 @@
       transform: scale(1.03) translateY(-2px);
     }
     .trip-btn:hover::after, .trip-btn:focus::after { margin-left:15px;}
-    /* VARIAN WARNA KARTU */
     .var1{border-bottom-color:#ffb300;}
     .var2{border-bottom-color:#fd6185;}
     .var3{border-bottom-color:#8e24aa;}
@@ -207,10 +425,9 @@
     .var8{border-bottom-color:#1976d2;}
     .var9{border-bottom-color:#009688;}
     .var10{border-bottom-color:#ffc107;}
-    /* FAQ */
     .faq-section {
       max-width: 730px;
-      margin:60px auto 0;
+      margin:75px auto 52px auto;
       background: #fff;
       border-radius: 1.5rem;
       box-shadow: var(--shadow);
@@ -228,9 +445,8 @@
     }
     details[open] summary {color:var(--accent);}
     details div {margin:7px 0 0 14px; color:#222;}
-    /* FOOTER */
     .footer {
-      margin-top:54px;
+      margin-top: 72px;
       background: var(--footer);
       color: #fff;
       text-align: center;
@@ -241,21 +457,6 @@
       box-shadow: 0 -4px 24px #19335a13;
     }
     .footer a { color: #ffe16b; text-decoration: underline; }
-    /* Responsive */
-    @media(max-width:600px){
-      .hero h1 {font-size:1.22rem;}
-      .header-wrap { padding: 0 9px; }
-      .card-grid{gap:13px;}
-      .faq-section{padding:14px 6px 16px 6px;}
-      .main{padding:7px;}
-      .logo{font-size:1rem;}
-      nav a{font-size:.98rem;padding:4px 7px;}
-      .hero-img{margin-top:14px;}
-    }
-    @media(max-width:600px){
-      .trip-card { padding-top: 38px; }
-      .trip-badge { top: 6px; font-size: 0.95rem; }
-    }
   </style>
 </head>
 <body>
@@ -289,7 +490,81 @@
         Mau solo trip, couple, atau rombongan? Di sini kamu bisa pilih <b>private trip Dieng</b> dari <b>1–10 orang</b>! Semua itinerary & fasilitas bisa request. Dijamin private, tanpa campur peserta lain, dan bonus spesial.
       </p>
     </div>
-
+  </section>
+  <!-- MENGAPA MEMILIH KAMI -->
+  <section class="alasan-pilih">
+    <h2>Mengapa Memilih Paket Wisata Dieng Kami?</h2>
+    <ul>
+      <li>✅ <b>Rute Wisata Lengkap & Fleksibel</b><br>Paket 1–3 hari, bisa disesuaikan dengan kebutuhan dan waktu Anda.</li>
+      <li>✅ <b>Penjemputan dari Banyak Kota</b><br>Tersedia penjemputan dari Jogja, Semarang, Purwokerto, Solo, dan kota sekitarnya.</li>
+      <li>✅ <b>Semua Sudah Termasuk</b><br>Harga paket sudah termasuk tiket masuk destinasi, transportasi, makan, penginapan, dan driver-guide.</li>
+      <li>✅ <b>Pengalaman Sejak 2012</b><br>Tim profesional, sudah melayani banyak tamu ke Dieng sejak tahun 2012.</li>
+      <li>✅ <b>Booking Mudah & Responsif</b><br>Pemesanan praktis lewat WhatsApp, konfirmasi cepat, layanan informatif.</li>
+      <li>✅ <b>Ulasan Tamu Positif</b><br>Banyak review baik dari pelanggan di Google dan media sosial.</li>
+    </ul>
+  </section>
+  <!-- KARTU KHUSUS & PRIVATE DIENG -->
+  <section class="khusus-wrap">
+    <h2>Paket Khusus & Private Dieng</h2>
+    <p class="khusus-desc">
+      Paket wisata kami punya pilihan jeep adventure seru, honeymoon, private trip untuk pasangan, dan perjalanan privat yang bisa kamu sesuaikan sendiri. Semua dibuat supaya kamu bisa menikmati liburan nyaman dan sesuai keinginan. Cocok untuk kamu yang ingin pengalaman berbeda dan personal.
+    </p>
+    <div class="khusus-cards">
+      <div class="khusus-card">
+        <div class="khusus-ikon">🚙</div>
+        <div class="khusus-main">
+          <div class="khusus-judul">Paket Jeep Dieng</div>
+          <div class="khusus-harga">Harga mulai <b>Rp350.000</b><span class="khusus-satuan">/pax</span></div>
+          <div class="khusus-fasilitas">
+            <span>Jeep 4x4</span> · <span>Tiket</span>
+          </div>
+          <div class="khusus-text">
+            Eksplorasi jalur offroad dan hidden gem dengan jeep Dieng, sunrise adventure atau jelajah spot alam anti-mainstream. Include driver lokal & tiket wisata Dieng.
+          </div>
+          <a href="jeep.html" class="khusus-btn">Lihat Detail</a>
+        </div>
+      </div>
+      <div class="khusus-card">
+        <div class="khusus-ikon">💖</div>
+        <div class="khusus-main">
+          <div class="khusus-judul">Paket Bulan Madu Dieng</div>
+          <div class="khusus-harga">Harga mulai <b>Rp4.900.000</b><span class="khusus-satuan">/pasangan</span></div>
+          <div class="khusus-fasilitas">
+            <span>Homestay</span> · <span>Dinner</span>
+          </div>
+          <div class="khusus-text">
+            Honeymoon romantis di Dieng: private homestay, dinner berdua, sesi foto, tour private, dan itinerary istimewa buat pasangan.
+          </div>
+          <a href="honeymoon.html" class="khusus-btn">Lihat Detail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- INFO CUACA & PEMBAYARAN -->
+  <section class="info-cuate-pay">
+    <div class="cuaca-box">
+      <div class="cuaca-ikon">🌤️</div>
+      <div>
+        <div class="cuaca-judul">Info Cuaca & Persiapan ke Dieng</div>
+        <div class="cuaca-suhu">9–20°C <span class="cuaca-ket">Suhu rata-rata siang & malam</span></div>
+        <div class="cuaca-desc">
+          Dieng memiliki udara sejuk hingga dingin, terutama malam hari.<br>
+          <b>Disarankan membawa:</b> jaket tebal, pakaian hangat, sarung tangan & penutup kepala.
+        </div>
+      </div>
+    </div>
+    <div class="pay-box">
+      <div class="pay-ikon">💳</div>
+      <div>
+        <div class="pay-judul">Metode Pembayaran Trip Dieng</div>
+        <div class="pay-bank">
+          <span>BCA</span> &nbsp;•&nbsp; <span>Mandiri</span> &nbsp;•&nbsp; <span>BNI</span>
+        </div>
+        <div class="pay-desc">
+          Semua pembayaran hanya melalui rekening <b>perusahaan terdaftar</b> demi keamanan & transparansi transaksi Anda.
+        </div>
+      </div>
+    </div>
   </section>
   <!-- KARTU PILIHAN 1–10 ORANG -->
   <section class="card-grid" id="paket">
@@ -390,8 +665,8 @@
   </section>
   <!-- FOOTER -->
   <footer class="footer">
-   <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
-© 2025 Tour Dieng 
+    <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+    © 2025 Tour Dieng 
   </footer>
 </body>
 </html>
