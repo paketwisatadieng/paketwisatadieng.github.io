@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Paket Honeymoon Dieng – Romantis, Private & Pengalaman Tak Terlupakan</title>
+  <meta name="description" content="Paket honeymoon Dieng private: pengalaman romantis, penginapan eksklusif, dinner istimewa, itinerary khusus pasangan. Sunrise, kabut pagi, view pegunungan, suasana tenang. Pilihan honeymoon terbaik di Dieng." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="/honeymoon.html">
+  <style>
+    :root {
+      --primary: #009688;
+      --primary-dark: #026c5b;
+      --secondary: #fffbe8;
+      --accent: #ffb300;
+      --footer: #19335a;
+      --radius: 2.2rem;
+      --shadow: 0 8px 32px rgba(0,0,0,0.07);
+      --transition: .19s cubic-bezier(.6,.3,0,1.2);
+    }
+    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
+    body { min-height:100vh; line-height:1.67; }
+    section { margin-bottom: 44px; }
+    .header {
+      width: 100%;
+      background: var(--footer);
+      color: #fff;
+      position: fixed;
+      top: 0; left: 0; z-index: 1000;
+      box-shadow: 0 4px 18px #1d355726;
+      padding: 0;
+    }
+    .header-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      height: 66px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .logo svg { margin-right: 11px; }
+    nav {
+      display: flex;
+      gap: 18px;
+    }
+    nav a {
+      color: #fffbe8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 4px 13px;
+      border-radius: 16px;
+      transition: background .17s;
+    }
+    nav a:hover, nav a.active {
+      background: var(--primary);
+      color: #fff;
+    }
+    .spacer-header { height: 66px; }
+    .main-honey {
+      max-width: 860px;
+      margin: 0 auto 44px auto;
+      background: #fff;
+      border-radius: 1.7rem;
+      box-shadow: var(--shadow);
+      padding: 44px 48px 40px 48px;
+    }
+    .main-honey h1 {
+      font-size: 2.1rem;
+      color: var(--primary-dark);
+      font-weight: 800;
+      margin-top: 0;
+      margin-bottom: 13px;
+      line-height: 1.13;
+      letter-spacing: .01em;
+    }
+    .main-honey .subtitle {
+      color: #ffb300;
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .main-honey .honeymoon-img {
+      width: 100%;
+      max-width: 720px;
+      display: block;
+      margin: 20px auto 34px auto;
+      border-radius: 1.2rem;
+      box-shadow: 0 4px 32px #00968813;
+      object-fit: cover;
+    }
+    .main-honey p {
+      font-size: 1.09rem;
+      color: #212b35cc;
+      margin-bottom: 22px;
+      margin-top: 0;
+    }
+    .honeymoon-box {
+      background: #f8efe7;
+      border-radius: 1.2rem;
+      padding: 20px 32px;
+      margin: 32px 0 35px 0;
+      box-shadow: 0 2px 12px #ffb30013;
+      color: #b96700;
+      font-size: 1.04rem;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+    .honeymoon-box strong { color: var(--primary); }
+    .main-honey h2 {
+      font-size: 1.19rem;
+      color: var(--primary);
+      font-weight: 800;
+      margin: 35px 0 17px 0;
+      letter-spacing: .01em;
+    }
+    .fasilitas-list {
+      padding-left: 22px;
+      margin-bottom: 16px;
+    }
+    .fasilitas-list li {margin-bottom: 10px;}
+    .itinerary-table-wrap {
+      margin: 28px 0 36px 0;
+    }
+    .itinerary-table {
+      border-collapse: collapse;
+      width: 100%;
+      background: #fffbe8;
+      border-radius: 1.1rem;
+      overflow: hidden;
+      box-shadow: 0 1px 12px #0096880f;
+      font-size: 1.05rem;
+      margin-bottom: 0;
+    }
+    .itinerary-table th, .itinerary-table td {
+      padding: 13px 14px;
+      border-bottom: 1px solid #e2e9f3;
+      text-align: left;
+    }
+    .itinerary-table th {
+      background: #ffb300;
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: .01em;
+    }
+    .itinerary-table tr:last-child td {
+      border-bottom: none;
+    }
+    .main-honey ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    .main-honey li {
+      margin-bottom: 8px;
+    }
+    .honeymoon-note {
+      color: #b48d00;
+      font-size: .97rem;
+      margin-top: 7px;
+    }
+    /* FAQ */
+    .faq-section {
+      max-width: 730px;
+      margin:75px auto 52px auto;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: var(--shadow);
+      padding:32px 26px 34px 26px;
+    }
+    .faq-section h2 {margin:0 0 17px; font-size:1.27rem;}
+    details {margin-bottom:12px;}
+    summary {
+      font-weight:700;
+      font-size:1.08rem;
+      cursor:pointer;
+      transition:color .13s;
+      color:var(--primary);
+      outline:none;
+    }
+    details[open] summary {color:var(--accent);}
+    details div {margin:7px 0 0 14px; color:#222;}
+    .footer {
+      margin-top: 72px;
+      background: var(--footer);
+      color: #fff;
+      text-align: center;
+      padding: 25px 0 12px 0;
+      font-size:1rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+      letter-spacing:.01em;
+      box-shadow: 0 -4px 24px #19335a13;
+    }
+    .footer a { color: #ffe16b; text-decoration: underline; }
+    @media(max-width:900px){
+      .main-honey {padding: 20px 9px 22px 9px;}
+      .faq-section {padding:16px 7px 20px 7px;}
+    }
+    @media(max-width:600px){
+      .header-wrap { padding: 0 6px; }
+      .main-honey {padding: 10px 2px 13px 2px;}
+      .main-honey h1 {font-size:1.16rem;}
+      .honeymoon-img {margin:10px 0 17px 0;}
+      .itinerary-table th, .itinerary-table td {padding:7px 8px;}
+      .faq-section{padding:8px 2px 8px 2px;}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-wrap">
+      <a href="/" class="logo">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
+        PutraTour
+      </a>
+      <nav>
+        <a href="hemat.html">Paket Hemat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+  <div class="spacer-header"></div>
+
+  <main class="main-honey">
+    <h1>Paket Honeymoon Dieng – Romantis, Private, Tak Sekadar Liburan</h1>
+    <div class="subtitle">Liburan berdua di atas awan, penuh kehangatan, sunrise, dan kenangan baru di Dataran Tinggi Dieng</div>
+    <img class="honeymoon-img" src="honeymoon-dieng.png" alt="Honeymoon Private Trip Dieng" loading="lazy" />
+
+    <p>
+      Bayangkan pagi pertama setelah akad, kamu dan pasangan bangun di negeri atas awan. Kabut tipis menyelimuti penginapan, udara segar menyapa, dan hanya suara alam menemani sarapan hangat. Inilah <b>honeymoon private di Dieng</b> — bukan sekadar “pergi berdua”, tapi perjalanan memperkuat cinta dengan pengalaman baru di alam, jauh dari hiruk-pikuk kota.
+    </p>
+    <p>
+      Paket ini diciptakan khusus untuk pasangan yang mendambakan privasi, keintiman, dan kemewahan sederhana: penginapan eksklusif, itinerary fleksibel, dinner romantis, dan momen-momen kecil penuh makna. Sunrise bersama, tour keliling Dieng Plateau, makan malam hangat ditemani lilin, dan sesi foto couple di tempat terbaik — semua bisa kamu rasakan di sini.
+    </p>
+    <div class="honeymoon-box">
+      <strong>Keunggulan Paket Honeymoon Dieng:</strong><br>
+      • <b>Private 100%</b> (hanya kamu & pasangan, tanpa rombongan)<br>
+      • <b>Penginapan eksklusif</b> — homestay/villa dengan view pegunungan & kabut pagi<br>
+      • <b>Sunrise special trip</b> — private tour ke spot sunrise & hidden gem<br>
+      • <b>Romantic dinner</b> — makan malam istimewa untuk dua orang, suasana hangat<br>
+      • <b>Itinerary fleksibel</b> — bebas request destinasi & waktu, no rush<br>
+      • <b>Dokumentasi couple</b> — sesi foto soft (basic, non-studio), bisa request spot<br>
+      • <b>Driver & guide ramah</b>, siap membantu dan menjaga privasi<br>
+      • <b>Detail trip disusun khusus</b> untuk kenyamanan honeymoon (tanpa itinerary paksaan)
+    </div>
+
+    <h2>Fasilitas Honeymoon Dieng</h2>
+    <ul class="fasilitas-list">
+      <li>✅ Penginapan eksklusif 1 malam (private homestay/villa — bukan campur tamu lain)</li>
+      <li>✅ Private transport & driver-guide berpengalaman</li>
+      <li>✅ Private trip sunrise + tour destinasi utama Dieng</li>
+      <li>✅ Tiket masuk wisata di itinerary</li>
+      <li>✅ Makan pagi, makan siang, dan romantic dinner untuk berdua</li>
+      <li>✅ Dokumentasi foto (handphone, bisa upgrade SLR/DSLR)</li>
+      <li>✅ Air mineral selama trip</li>
+      <li>✅ Free souvenir eksklusif pasangan</li>
+    </ul>
+
+    <h2>Itinerary Rekomendasi 2 Hari 1 Malam</h2>
+    <div class="itinerary-table-wrap">
+      <table class="itinerary-table">
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Aktivitas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hari 1</td>
+            <td>
+              - Penjemputan di Wonosobo/Dieng<br>
+              - Private check-in & welcome drink<br>
+              - Trip sore ke Telaga Warna, Batu Ratapan Angin, Candi Arjuna<br>
+              - Sunset berdua & sesi foto couple<br>
+              - Romantic dinner di penginapan (dekorasi, lilin, menu spesial)
+            </td>
+          </tr>
+          <tr>
+            <td>Hari 2</td>
+            <td>
+              - Wake up call & sunrise trip ke Sikunir atau hidden spot<br>
+              - Sarapan di penginapan<br>
+              - Free time / sesi foto<br>
+              - Tour Kawah Sikidang & oleh-oleh<br>
+              - Check-out & antar ke meeting point<br>
+              <span style="color:#b48d00;font-size:.98em;"><b>Itinerary bisa di-request sesuai keinginan pasangan.</b></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="honeymoon-note">
+        <b>Note:</b> Tersedia upgrade honeymoon 3 hari 2 malam dan request destinasi/spot pre-wedding (konsultasi gratis).
+      </div>
+    </div>
+
+    <h2>Harga Paket Honeymoon Dieng 2 Hari 1 Malam</h2>
+    <div class="honeymoon-box" style="background:#fffbe8;color:#884c00;">
+      <b>Mulai Rp4.900.000/pasangan</b>  
+      <ul style="margin:7px 0 0 0;padding-left:19px;">
+        <li>Harga berlaku untuk periode normal (bukan high season/libur nasional)</li>
+        <li>Bisa custom upgrade/ekstra malam (fee sesuai request)</li>
+        <li>Down payment hanya ke rekening perusahaan resmi, transparan & aman</li>
+      </ul>
+    </div>
+
+    <h2>Tips Honeymoon Berkesan di Dieng</h2>
+    <ul>
+      <li>Pilih waktu weekday/low season untuk suasana lebih sepi & intim</li>
+      <li>Siapkan baju hangat, syal, dan perlengkapan pribadi (malam bisa 9–13°C)</li>
+      <li>Komunikasikan preferensi makanan/diet ke admin sebelum trip</li>
+      <li>Maksimalkan momen, lebih baik off sosial media selama trip 😍</li>
+      <li>Jangan ragu minta sesi foto di spot yang disuka, driver kami siap bantu</li>
+    </ul>
+  </main>
+
+  <!-- FAQ SUPER SEO -->
+  <section class="faq-section" id="faq">
+    <h2>FAQ Paket Honeymoon Dieng</h2>
+    <details>
+      <summary>Paket ini benar-benar private?</summary>
+      <div>Ya, 100% private. Tidak ada peserta lain dalam trip, mulai dari penjemputan, penginapan, hingga seluruh aktivitas.</div>
+    </details>
+    <details>
+      <summary>Apakah bisa request itinerary sesuai keinginan pasangan?</summary>
+      <div>Sangat bisa! Kamu dan pasangan bebas menentukan destinasi, waktu aktivitas, hingga detail dinner dan sesi foto.</div>
+    </details>
+    <details>
+      <summary>Bagaimana dengan makanan halal/khusus diet?</summary>
+      <div>Kami siap menyesuaikan menu (halal, vegetarian, atau diet khusus). Cukup konfirmasi di awal booking.</div>
+    </details>
+    <details>
+      <summary>Ada dekorasi khusus untuk honeymoon?</summary>
+      <div>Ya, kamar & dinner akan didekorasi simple namun romantis — ada opsi upgrade dekorasi sesuai request pasangan.</div>
+    </details>
+    <details>
+      <summary>Apakah ada sesi foto pre-wedding?</summary>
+      <div>Termasuk sesi dokumentasi ringan (basic). Untuk pre-wedding, bisa upgrade fotografer & properti — konsultasi gratis.</div>
+    </details>
+    <details>
+      <summary>Bisa extend jadi 3 hari atau tambah city tour?</summary>
+      <div>Bisa banget, itinerary & durasi bisa diubah sesuai request dan ketersediaan jadwal.</div>
+    </details>
+    <details>
+      <summary>Bagaimana pembayaran dan keamanan transaksi?</summary>
+      <div>Pembayaran hanya melalui rekening perusahaan terdaftar. Transparan, aman, dan bisa DP dulu (sisanya H-1 trip).</div>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+    © 2025 Tour Dieng 
+  </footer>
+</body>
+</html>
