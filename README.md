@@ -1,4 +1,4 @@
-# Paket Wisata Dieng – Website Resmi & Dokumentasi
+# Paket Wisata Dieng – Pusat Info & Dokumentasi
 
 Selamat datang di repository resmi **paketwisatadieng.github.io**!
 
