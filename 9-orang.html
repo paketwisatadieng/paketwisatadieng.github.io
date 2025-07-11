@@ -3,56 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <title>Private Trip Dieng 9 Orang | Rombongan Asik</title>
+  <meta name="description" content="Private Trip Dieng 9 orang by PutraTour. Mobil ELF/Hiace private, itinerary custom, harga hemat, booking mudah via WhatsApp. Cocok outing kantor, reuni, keluarga.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="/9-orang.html">
   <style>
-    body {margin:0;font-family:'Cabin',Arial,sans-serif;background:#ecfff6;color:#115f4d;}
-    .header {background:#009688;color:#fff;text-align:center;padding:30px 0 16px;box-shadow:0 2px 11px #00968818;}
-    .icon {font-size:3.2rem;}
-    .main {max-width:670px;margin:43px auto 0;background:#fff;border-radius:30px;box-shadow:0 12px 32px #00968812;padding:34px 32px;}
-    .badge {background:#b2f7e2;color:#009688;font-weight:700;display:inline-block;border-radius:34px;padding:8px 19px;margin-bottom:13px;}
-    .headline {font-size:1.38rem;margin:10px 0 13px;}
-    .desc {margin-bottom:16px;}
+    :root {
+      --primary: #009688;
+      --accent: #115f4d;
+      --secondary: #ecfff6;
+      --footer: #19335a;
+      --radius: 2.2rem;
+      --shadow: 0 8px 32px rgba(0,0,0,0.07);
+    }
+    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
+    body { min-height:100vh; }
+    /* HEADER */
+    .header {
+      width: 100%;
+      background: var(--footer);
+      color: #fff;
+      position: fixed;
+      top: 0; left: 0; z-index: 1000;
+      box-shadow: 0 4px 18px #1d355726;
+      padding: 0;
+    }
+    .header-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 22px;
+      height: 66px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .logo svg { margin-right: 11px; }
+    nav { display: flex; gap: 18px; }
+    nav a {
+      color: #fffbe8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 4px 13px;
+      border-radius: 16px;
+      transition: background .17s;
+    }
+    nav a:hover, nav a.active { background: var(--primary); color: #fff; }
+    .spacer-header { height: 66px; }
+    /* MAIN */
+    .main {
+      max-width:670px;
+      margin:44px auto 32px auto;
+      background:#fff;
+      border-radius:30px;
+      box-shadow:0 12px 32px #00968812;
+      padding:34px 32px;
+      position:relative;
+      z-index:2;
+    }
+    .badge {
+      background:#b2f7e2;
+      color:var(--primary);
+      font-weight:700;
+      display:inline-block;
+      border-radius:34px;
+      padding:8px 19px;
+      margin-bottom:13px;
+      font-size:1.04rem;
+    }
+    .headline {
+      font-size:1.38rem;
+      margin:10px 0 13px;
+      font-weight:900;
+      color:var(--accent);
+      letter-spacing:-.01em;
+    }
+    .desc {margin-bottom:16px;font-size:1.08rem;}
     .itinerary h3 {margin-bottom:7px;}
-    .itinerary ul {margin:0 0 0 15px;}
-    .fasilitas {display:flex;flex-wrap:wrap;gap:9px 7px;margin:14px 0 18px;}
-    .fasilitas span {background:#ecfff6;color:#115f4d;border-radius:14px;padding:6px 13px;font-weight:600;}
-    .cta {display:block;background:#009688;color:#fff;text-align:center;padding:12px 0;border-radius:38px;font-weight:700;text-decoration:none;font-size:1.13rem;margin:19px 0 0;transition:background 0.14s;}
+    .itinerary ul {margin:0 0 0 15px;padding:0;}
+    .itinerary li {margin-bottom:6px;}
+    .fasilitas {
+      display:flex;flex-wrap:wrap;gap:9px 7px;margin:14px 0 18px;
+    }
+    .fasilitas span {
+      background:#ecfff6;
+      color:var(--accent);
+      border-radius:14px;
+      padding:6px 13px;
+      font-weight:600;
+      font-size:1.01rem;
+    }
+    .cta {
+      display:block;
+      background:var(--primary);
+      color:#fff;
+      text-align:center;
+      padding:12px 0;
+      border-radius:38px;
+      font-weight:700;
+      text-decoration:none;
+      font-size:1.13rem;
+      margin:19px 0 0;
+      transition:background 0.14s;
+    }
     .cta:hover {background:#08675c;}
-    .faq-grid {background:#b2f7e2;padding:17px 12px;border-radius:17px;margin:25px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-    .faq-item {background:#fff;border-radius:12px;padding:10px 12px;box-shadow:0 2px 12px #00968813;}
-    .faq-title {font-weight:700;margin-bottom:9px;}
-    .footer {background:#009688;color:#fff;text-align:center;padding:14px 0;margin-top:37px;}
-    @media(max-width:700px){.main{padding:11px 5px;}.faq-grid{grid-template-columns:1fr;}}
+    .faq-title {font-weight:700;margin:28px 0 12px;}
+    .faq-grid {
+      background:#b2f7e2;
+      padding:17px 12px;
+      border-radius:17px;
+      margin:15px 0 0;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:8px;
+    }
+    .faq-item {
+      background:#fff;
+      border-radius:12px;
+      padding:10px 12px;
+      box-shadow:0 2px 12px #00968813;
+      font-size:1.02rem;
+    }
+    .footer {
+      margin-top:54px;
+      background: var(--footer);
+      color: #fff;
+      text-align: center;
+      padding: 25px 0 12px 0;
+      font-size:1rem;
+      border-radius: 1.5rem 1.5rem 0 0;
+      letter-spacing:.01em;
+      box-shadow: 0 -4px 24px #19335a13;
+    }
+    .footer a { color: #ffe16b; text-decoration: underline; }
+    @media(max-width:700px){
+      .header-wrap { padding: 0 9px; }
+      .main{padding:11px 5px;}
+      .faq-grid{grid-template-columns:1fr;}
+    }
   </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header class="header">
-    <div class="icon">🤩🚌🎉</div>
-    <h1>Private Trip Dieng 9 Orang</h1>
-    <div style="opacity:0.8;">Rombongan Asik & Kompak</div>
+    <div class="header-wrap">
+      <a href="/" class="logo">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
+        PutraTour
+      </a>
+      <nav>
+        <a href="hemat.html">Paket Hemat</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
   </header>
-<a href="/" 
-  style="
-    display:inline-block;
-    margin:28px 0 16px 0;
-    padding:9px 28px 9px 18px;
-    background:#009688;
-    color:#fff;
-    font-weight:800;
-    font-size:1.07rem;
-    border-radius:30px;
-    box-shadow:0 2px 16px #00968821;
-    text-decoration:none;
-    letter-spacing:0.01em;
-    transition:background .17s,transform .15s;
-    position:relative;
-  "
-  onmouseover="this.style.background='#03685a';this.style.textDecoration='underline'"
-  onmouseout="this.style.background='#009688';this.style.textDecoration='none'"
->
-  ← Kembali ke Home
-</a>
+  <div class="spacer-header"></div>
 
   <main class="main">
     <div class="badge">Fun Group</div>
@@ -79,7 +197,6 @@
       <span>Dokumentasi</span>
       <span>Snack & air mineral</span>
     </div>
-    <a href="https://wa.me/628112828283?text=Private+Trip+Dieng+9+Orang" class="cta">Booking WhatsApp</a>
     <div class="faq-title">FAQ Private 9 Orang</div>
     <div class="faq-grid">
       <div class="faq-item">Bisa request itinerary sendiri?</div>
@@ -93,7 +210,8 @@
     </div>
   </main>
   <footer class="footer">
-    © 2025 Private Trip Dieng 9 Orang | Putra Tour
+    <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
+    © 2025 Tour Dieng 
   </footer>
 </body>
 </html>
