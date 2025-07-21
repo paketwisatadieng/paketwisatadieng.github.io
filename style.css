@@ -368,16 +368,13 @@ body {
 }
 
 /* --- Responsive Table Patch --- */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  box-sizing: border-box;
-}
 @media (max-width: 800px) {
-  table {
-    display: block;
+  .seasonal {
     overflow-x: auto;
-    white-space: nowrap;
-    max-width: 100%;
+  }
+  .seasonal table {
+    min-width: 420px;
+    width: 100%;
+    /* display: table;  // default, gak perlu ditambah */
   }
 }
