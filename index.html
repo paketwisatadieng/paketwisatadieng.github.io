@@ -1,672 +1,206 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Paket Wisata Dieng Private Trip – Itinerary Custom, Harga Hemat, Fasilitas Lengkap</title>
-  <meta name="description" content="Pilih paket wisata Dieng private trip: itinerary fleksibel, fasilitas lengkap, harga transparan, dan bisa request destinasi. Cocok untuk solo, couple, atau rombongan!"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="canonical" href="https://paketwisatatourdieng.com">
-  <style>
-    :root {
-      --primary: #009688;
-      --primary-dark: #026c5b;
-      --secondary: #fffbe8;
-      --accent: #ffb300;
-      --footer: #19335a;
-      --radius: 2.2rem;
-      --shadow: 0 8px 32px rgba(0,0,0,0.07);
-      --transition: .19s cubic-bezier(.6,.3,0,1.2);
-    }
-    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
-    body { min-height:100vh; line-height:1.67; }
-    section { margin-bottom: 44px; }
-    .header {
-      width: 100%;
-      background: var(--footer);
-      color: #fff;
-      position: fixed;
-      top: 0; left: 0; z-index: 1000;
-      box-shadow: 0 4px 18px #1d355726;
-      padding: 0;
-    }
-    .header-wrap {
-      max-width: 1140px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 22px;
-      height: 66px;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      font-size: 1.35rem;
-      font-weight: 800;
-      text-decoration: none;
-      color: #fff;
-      letter-spacing: 0.01em;
-    }
-    .logo svg { margin-right: 11px; }
-    nav {
-      display: flex;
-      gap: 18px;
-    }
-    nav a {
-      color: #fffbe8;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 4px 13px;
-      border-radius: 16px;
-      transition: background .17s;
-    }
-    nav a:hover, nav a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-    .spacer-header { height: 66px; }
-    .hero {
-      background: linear-gradient(90deg, #009688 72%, #fffbe8 100%);
-      padding: 0px 0 94px 0;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      margin-bottom: 64px;
-    }
-    .hero-content { position:relative; z-index:3;}
-    .hero h1 { font-size:2.45rem; color:#fff; font-weight:800; margin-bottom:13px; text-shadow: 0 2px 10px #00968828;}
-    .hero p { color:#fffbe8; font-size:1.13rem; font-weight:600; max-width:540px; margin:auto; text-shadow:0 2px 8px #00968833;}
-    .hero-img {
-      object-fit:cover;
-      object-position:center;
-      max-width:100%;
-      width: 100%;
-      height: auto;
-      border-radius:1.2rem;
-      margin-top:24px;
-      box-shadow:0 4px 32px #00968818;
-      z-index:2;
-      position:relative;
-      display: block;
-    }
-    /* ALASAN PILIH */
-    .alasan-pilih {
-      max-width: 740px;
-      margin: 60px auto 52px auto;
-      background: #fff;
-      border-radius: 1.5rem;
-      box-shadow: var(--shadow);
-      padding: 44px 38px 32px 44px;
-      color: #19335a;
-      font-size: 1.1rem;
-      letter-spacing: .01em;
-    }
-    .alasan-pilih h2 {
-      font-size: 1.23rem;
-      margin: 0 0 17px 0;
-      color: var(--primary);
-      font-weight: 800;
-      letter-spacing: .01em;
-    }
-    .alasan-pilih ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .alasan-pilih li {
-      margin-bottom: 20px;
-      padding-left: 0;
-      line-height: 1.52;
-      font-weight: 600;
-    }
-    .alasan-pilih b {
-      color: var(--primary-dark);
-    }
-    /* KARTU KHUSUS & PRIVATE */
-    .khusus-wrap {
-      max-width: 900px;
-      margin: 0 auto 54px auto;
-      background: #fff;
-      border-radius: 1.6rem;
-      box-shadow: var(--shadow);
-      padding: 38px 32px 32px 32px;
-    }
-    .khusus-wrap h2 {
-      font-size: 1.28rem;
-      font-weight: 800;
-      color: var(--primary);
-      margin: 0 0 18px 0;
-    }
-    .khusus-desc {
-      font-size: 1.04rem;
-      color: #313a48c9;
-      margin-bottom: 33px;
-    }
-    .khusus-cards {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-    .khusus-card {
-      background: #f9fbfe;
-      border-radius: 1.15rem;
-      box-shadow: 0 4px 18px #00968810;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 22px 32px 20px 22px;
-      min-width: 300px;
-      max-width: 390px;
-      flex: 1 1 320px;
-      margin-bottom: 13px;
-      transition: transform .17s, box-shadow .18s;
-      border: 1.5px solid #e8eeff;
-      position: relative;
-    }
-    .khusus-card:hover { 
-      transform: translateY(-4px) scale(1.018); 
-      box-shadow: 0 12px 32px #0096881c;
-      border-color: #b2dfdb;
-    }
-    .khusus-ikon {
-      font-size: 2.4rem;
-      margin-right: 15px;
-      margin-top: 6px;
-      user-select: none;
-      filter: drop-shadow(0 1px 4px #fff);
-    }
-    .khusus-main {
-      flex: 1;
-    }
-    .khusus-judul {
-      font-size: 1.13rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-      margin-bottom: 2px;
-      letter-spacing: .01em;
-    }
-    .khusus-harga {
-      font-size: 1.06rem;
-      font-weight: 600;
-      color: #19335ad6;
-      margin-bottom: 7px;
-    }
-    .khusus-harga b { color: var(--accent); font-size:1.13em; }
-    .khusus-satuan { font-weight: 400; color: #626e8b; font-size:.98em; margin-left:2px; }
-    .khusus-fasilitas {
-      font-size: .96rem;
-      color: #00897b;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-    .khusus-text {
-      font-size: .99rem;
-      color: #222b45c7;
-      margin-bottom: 17px;
-      min-height:40px;
-    }
-    .khusus-btn {
-      display: inline-block;
-      background: var(--primary);
-      color: #fff;
-      font-weight: 800;
-      border-radius: 22px;
-      font-size: .98rem;
-      padding: 8px 28px 8px 17px;
-      text-decoration: none;
-      box-shadow: 0 2px 10px #00968818;
-      border: none;
-      letter-spacing: .01em;
-      transition: background .15s, transform .15s;
-      position: relative;
-      cursor: pointer;
-    }
-    .khusus-btn:hover { background: #026c5b; transform: scale(1.04) translateY(-2px);}
-    .khusus-btn::after {
-      content: '→';
-      margin-left: 7px;
-      font-weight: 900;
-      font-size: 1.09em;
-      transition: margin-left .12s;
-    }
-    /* INFO CUACA & PEMBAYARAN */
-    .info-cuate-pay {
-      display: flex;
-      gap: 28px;
-      max-width: 900px;
-      margin: 0 auto 46px auto;
-      flex-wrap: wrap;
-    }
-    .cuaca-box, .pay-box {
-      flex: 1 1 300px;
-      background: #f9fbfe;
-      border-radius: 1.15rem;
-      box-shadow: 0 4px 18px #0096880a;
-      padding: 28px 26px 22px 26px;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      border: 1.5px solid #e8eeff;
-      min-width: 0;
-    }
-    .cuaca-box { margin-bottom: 0; }
-    .cuaca-ikon, .pay-ikon {
-      font-size: 2.25rem;
-      margin-right: 15px;
-      margin-top: 5px;
-      user-select: none;
-      filter: drop-shadow(0 1px 4px #fff);
-    }
-    .cuaca-judul, .pay-judul {
-      font-weight: 800;
-      font-size: 1.12rem;
-      color: var(--primary-dark);
-      margin-bottom: 2px;
-    }
-    .cuaca-suhu {
-      font-size: 1.08rem;
-      font-weight: 700;
-      color: #19335ad6;
-      margin-bottom: 7px;
-    }
-    .cuaca-ket {
-      font-size: .96rem;
-      color: #626e8b;
-      font-weight: 400;
-      margin-left: 7px;
-    }
-    .cuaca-desc, .pay-desc {
-      font-size: .99rem;
-      color: #21334bcb;
-      margin-top: 3px;
-      line-height: 1.54;
-    }
-    .pay-bank {
-      font-size: 1.07rem;
-      font-weight: 700;
-      color: #009688;
-      margin-bottom: 7px;
-      margin-top: 4px;
-    }
-    @media(max-width:900px){
-      .khusus-cards { flex-direction: column; gap: 17px; }
-      .khusus-card { max-width:100%; padding: 19px 17px 16px 13px;}
-      .alasan-pilih { padding: 22px 8px 15px 12px; }
-      .khusus-wrap { padding: 15px 6px 10px 7px; }
-      .info-cuate-pay { flex-direction: column; gap: 17px; }
-      .cuaca-box, .pay-box { padding: 17px 13px 14px 11px; }
-    }
-    @media(max-width:600px){
-      .hero h1 {font-size:1.13rem;}
-      .alasan-pilih {padding:10px 5px 8px 6px; margin-top:36px; margin-bottom:32px;}
-      .khusus-wrap {padding:8px 3px 8px 3px;}
-      .faq-section{padding:11px 4px 10px 4px;}
-      .trip-card {padding-top:25px;}
-      .trip-badge {top:4px;font-size:.93rem;}
-      .card-grid {gap:9px;}
-      .info-cuate-pay { gap: 9px; }
-      .cuaca-box, .pay-box { padding: 10px 6px 10px 6px; }
-    }
-    /* KARTU PILIHAN */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(268px,1fr));
-      gap: 34px;
-      max-width: 1100px;
-      margin: 0 auto 58px auto;
-      z-index:2;
-      position:relative;
-    }
-    .trip-card {
-      background: #fff;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 60px 22px 32px 22px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      transition: transform var(--transition), box-shadow var(--transition);
-      border-bottom: 4px solid var(--primary);
-      min-height:330px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      outline: 0 solid transparent;
-    }
-    .trip-card:hover, .trip-card:focus-within {
-      transform: translateY(-9px) scale(1.035) rotate(-0.5deg);
-      box-shadow: 0 12px 48px #00968828;
-      outline: 2px solid var(--primary);
-    }
-    .trip-badge {
-      position: absolute;
-      left: 50%; top: 14px; transform: translateX(-50%);
-      background: var(--accent);
-      color: #fff;
-      font-weight: 900;
-      padding: 8px 24px;
-      border-radius: 34px;
-      font-size: 1rem;
-      box-shadow: 0 2px 16px #ffb30025;
-      letter-spacing:.02em;
-      z-index:2;
-      animation: badgePop .8s cubic-bezier(.2,2,.5,.9);
-    }
-    @keyframes badgePop {
-      0% {transform:translateX(-50%) scale(0.5);}
-      65%{transform:translateX(-50%) scale(1.17);}
-      100%{transform:translateX(-50%) scale(1);}
-    }
-    .trip-icon {
-      font-size:2.8rem;
-      margin-top:18px;
-      margin-bottom:13px;
-      user-select: none;
-      filter: drop-shadow(0 2px 3px #fffbe8cc);
-    }
-    .trip-title {
-      font-size:1.31rem;
-      font-weight:800;
-      color: var(--primary);
-      margin:0 0 6px;
-      letter-spacing:.01em;
-    }
-    .trip-desc {
-      font-size:1.04rem;
-      color:#19335abb;
-      margin-bottom:21px;
-      min-height:42px;
-    }
-    .trip-btn {
-      margin-top: auto;
-      display: inline-block;
-      background: var(--primary);
-      color: #fff;
-      font-weight: 800;
-      border-radius: 28px;
-      font-size: 1.09rem;
-      padding: 10px 38px 10px 28px;
-      text-decoration: none;
-      box-shadow: 0 2px 16px #00968814;
-      border: none;
-      letter-spacing: .02em;
-      transition: background var(--transition), transform var(--transition);
-      position: relative;
-      cursor: pointer;
-    }
-    .trip-btn::after {
-      content: '→';
-      margin-left: 8px;
-      font-weight: 900;
-      font-size: 1.1em;
-      transition: margin-left .17s cubic-bezier(.5,.3,.4,1.2);
-    }
-    .trip-btn:hover, .trip-btn:focus {
-      background: #03685a;
-      transform: scale(1.03) translateY(-2px);
-    }
-    .trip-btn:hover::after, .trip-btn:focus::after { margin-left:15px;}
-    .var1{border-bottom-color:#ffb300;}
-    .var2{border-bottom-color:#fd6185;}
-    .var3{border-bottom-color:#8e24aa;}
-    .var4{border-bottom-color:#26c6da;}
-    .var5{border-bottom-color:#7c3aed;}
-    .var6{border-bottom-color:#ff9800;}
-    .var7{border-bottom-color:#00b870;}
-    .var8{border-bottom-color:#1976d2;}
-    .var9{border-bottom-color:#009688;}
-    .var10{border-bottom-color:#ffc107;}
-    .faq-section {
-      max-width: 730px;
-      margin:75px auto 52px auto;
-      background: #fff;
-      border-radius: 1.5rem;
-      box-shadow: var(--shadow);
-      padding:32px 26px 34px 26px;
-    }
-    .faq-section h2 {margin:0 0 17px; font-size:1.27rem;}
-    details {margin-bottom:12px;}
-    summary {
-      font-weight:700;
-      font-size:1.08rem;
-      cursor:pointer;
-      transition:color .13s;
-      color:var(--primary);
-      outline:none;
-    }
-    details[open] summary {color:var(--accent);}
-    details div {margin:7px 0 0 14px; color:#222;}
-    .footer {
-      margin-top: 72px;
-      background: var(--footer);
-      color: #fff;
-      text-align: center;
-      padding: 25px 0 12px 0;
-      font-size:1rem;
-      border-radius: 1.5rem 1.5rem 0 0;
-      letter-spacing:.01em;
-      box-shadow: 0 -4px 24px #19335a13;
-    }
-    .footer a { color: #ffe16b; text-decoration: underline; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paket Wisata Dieng 2025 - The Best Tour Organizer</title>
+  <meta name="description" content="Paket Wisata Dieng 2025, The Best Tour Organizer Memberikan Pengalaman Baru Berwisata Ke Dieng. Nikmati Layanan Dan Berbagai Kemudahan dari Kami. Dieng Tour Mitra Setia Perjalanan Wisata Anda." />
+  <link rel="canonical" href="https://paketwisatatourdieng.com/" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="style.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-wrap">
-      <a href="/" class="logo">
-        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
-        PutraTour
-      </a>
-      <nav>
-        <a href="hemat.html" class="active">Paket</a>
-        <a href="kontak.html">Kontak</a>
-      </nav>
+  <div class="wrapper">
+<header class="header">
+  <div class="logo">
+<span class="semar-icon" aria-label="Candi Arjuna Dieng">
+  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true" focusable="false">
+    <circle cx="22" cy="22" r="22" fill="#F7F5F0"/>
+    <!-- Bawah candi -->
+    <rect x="11" y="30" width="22" height="6" rx="2.2" fill="#a3865c" stroke="#6a4a26" stroke-width="1.2"/>
+    <!-- Tengah candi -->
+    <rect x="15" y="21" width="14" height="9" rx="2" fill="#cbb395" stroke="#6a4a26" stroke-width="1"/>
+    <!-- Badan candi -->
+    <rect x="18" y="14" width="8" height="7" rx="1.2" fill="#f4e4c7" stroke="#6a4a26" stroke-width="1"/>
+    <!-- Kepala candi -->
+    <rect x="20.3" y="10.2" width="3.4" height="4.3" rx="1.1" fill="#e1c48e" stroke="#6a4a26" stroke-width="1"/>
+    <!-- Mahkota -->
+    <rect x="21.5" y="7" width="1" height="4" rx="0.5" fill="#ad874c"/>
+    <!-- Detail pintu -->
+    <rect x="21" y="16.3" width="2" height="2.7" rx="0.6" fill="#a3865c" />
+    <!-- Tangga bawah -->
+    <rect x="16" y="36" width="12" height="2" rx="0.8" fill="#cfb289"/>
+  </svg>
+</span>
+
+
+    <span class="brand">Paket Wisata Dieng</span>
+    <p>Sejak 2012</p>
+  </div>
+</header>
+
+    <nav class="nav" aria-label="Main Navigation">
+<ul>
+  <li><a href="/">Beranda</a></li>
+  <li><a href="tentang.html">Tentang</a></li>
+  <li><a href="ketentuan.html">S&amp;K</a></li>
+  <li><a href="privasi.html">Privasi</a></li>
+  <li><a href="kontak.html">Kontak</a></li>
+</ul>
+
+    </nav>
+    <main class="main-content">
+      <aside class="categories">
+        <h2>Paket Wisata Populer</h2>
+<ul>
+  <li><a href="1hari.html">Paket Wisata 1 Hari</a></li>
+  <li><a href="2h1m.html">Paket Wisata 2 Hari 1 Malam</a></li>
+  <li><a href="3h2m.html">Paket Wisata 3 Hari 2 Malam</a></li>
+  <li><a href="4h3m.html">Paket Wisata 4 Hari 3 Malam</a></li>
+  <li><a href="jeep.html">Paket Jeep Dieng</a></li>
+  <li><a href="2orang.html">Paket 2 Orang</a></li>
+  <li><a href="jogja.html">Paket Wisata Dieng dari Jogja</a></li>
+  <li><a href="semarang.html">Paket Dieng dari Semarang</a></li>
+  <li><a href="purwokerto.html">Paket Dieng dari Purwokerto</a></li>
+  <li><a href="solo.html">Paket Wisata Dieng dari Solo</a></li>
+  <li><a href="bulan-madu.html">Paket Bulan Madu</a></li>
+  <li><a href="private.html">Private Trip Dieng</a></li>
+</ul>
+
+      </aside>
+      <section class="seasonal">
+<h1>Paket Wisata Dieng, Info Destinasi & Harga 2025</h1>
+<img src="img/paket-wisata-dieng.jpg" alt="Paket Wisata Dieng" style="max-width:100%;height:auto;border-radius:14px;box-shadow:0 4px 24px rgba(40,34,54,0.07);margin-bottom:1.5em;" loading="lazy" />
+<p><strong>Selamat datang</strong> di layanan <strong>paket wisata Dieng</strong>, biro perjalanan ke Dataran Tinggi Dieng, Jawa Tengah yang menyediakan berbagai pilihan tour, trip, dan layanan travel dengan beragam penawaran menarik untuk setiap kebutuhan liburan.</p>
+<p><strong>Sejak 2012</strong>, travel kami dipercaya oleh wisatawan dari dalam dan luar negeri. Selain paket tour, kami juga membantu informasi destinasi, transportasi, akomodasi, serta berbagai kebutuhan perjalanan ke Dieng.</p>
+
+
+<h2>Pilihan Hemat Tour & Trip ke Dieng</h2>
+<section class="gallery gallery-cards">
+  <div class="gallery-card">
+    <img src="img/1-hari.jpg" alt="Trip 1 Hari Dieng" />
+    <div class="gallery-card-content">
+      <h3>Trip 1 Hari</h3>
+      <p>Liburan singkat, berangkat pagi pulang malam. <strong>Sunrise Sikunir, Telaga Warna, Candi Arjuna</strong>.</p>
+      <a href="1hari.html" class="btn-gallery">Lihat Detail</a>
     </div>
-  </header>
-  <div class="spacer-header"></div>
-  <img 
-    src="paket-dieng.png"
-    alt="Private Trip Dieng - Banner"
-    width="1200"
-    height="420"
-    style="display:block;max-width:100%;width:100%;height:auto;margin:0 auto;border-radius:0 0 1.3rem 1.3rem;box-shadow:0 6px 32px #00968818;"
-    loading="eager"
-  />
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Paket Wisata Dieng — Pilih Sesuai Jumlah Peserta</h1>
-      <p>
-        Mau solo trip, couple, atau rombongan? Di sini kamu bisa pilih <b>private trip Dieng</b> dari <b>1–10 orang</b>! Semua itinerary & fasilitas bisa request. Dijamin private, tanpa campur peserta lain, dan bonus spesial.
-      </p>
+  </div>
+  <div class="gallery-card">
+    <img src="img/2-hari.jpg" alt="Tour 2 Hari 1 Malam Dieng" />
+    <div class="gallery-card-content">
+      <h3>Tour 2 Hari 1 Malam</h3>
+      <p>Destinasi lengkap, sunrise & sunset, inap homestay. Cocok untuk keluarga & kantor.</p>
+      <a href="2h1m.html" class="btn-gallery">Lihat Detail</a>
     </div>
-  </section>
-  <!-- MENGAPA MEMILIH KAMI -->
-  <section class="alasan-pilih">
-    <h2>Mengapa Memilih Paket Wisata Dieng Kami?</h2>
-    <ul>
-      <li>✅ <b>Rute Wisata Lengkap & Fleksibel</b><br>Paket 1–3 hari, bisa disesuaikan dengan kebutuhan dan waktu Anda.</li>
-      <li>✅ <b>Penjemputan dari Banyak Kota</b><br>Tersedia penjemputan dari Jogja, Semarang, Purwokerto, Solo, dan kota sekitarnya.</li>
-      <li>✅ <b>Semua Sudah Termasuk</b><br>Harga paket sudah termasuk tiket masuk destinasi, transportasi, makan, penginapan, dan driver-guide.</li>
-      <li>✅ <b>Pengalaman Sejak 2012</b><br>Tim profesional, sudah melayani banyak tamu ke Dieng sejak tahun 2012.</li>
-      <li>✅ <b>Booking Mudah & Responsif</b><br>Pemesanan praktis lewat WhatsApp, konfirmasi cepat, layanan informatif.</li>
-      <li>✅ <b>Ulasan Tamu Positif</b><br>Banyak review baik dari pelanggan di Google dan media sosial.</li>
-    </ul>
-  </section>
-  <!-- KARTU KHUSUS & PRIVATE DIENG -->
-  <section class="khusus-wrap">
-    <h2>Paket Khusus & Private Dieng</h2>
-    <p class="khusus-desc">
-      Paket wisata kami punya pilihan jeep adventure seru, honeymoon, private trip untuk pasangan, dan perjalanan privat yang bisa kamu sesuaikan sendiri. Semua dibuat supaya kamu bisa menikmati liburan nyaman dan sesuai keinginan. Cocok untuk kamu yang ingin pengalaman berbeda dan personal.
-    </p>
-    <div class="khusus-cards">
-      <div class="khusus-card">
-        <div class="khusus-ikon">🚙</div>
-        <div class="khusus-main">
-          <div class="khusus-judul">Paket Jeep Dieng</div>
-          <div class="khusus-harga">Harga mulai <b>Rp350.000</b><span class="khusus-satuan">/pax</span></div>
-          <div class="khusus-fasilitas">
-            <span>Jeep 4x4</span> · <span>Tiket</span>
-          </div>
-          <div class="khusus-text">
-            Eksplorasi jalur offroad dan hidden gem dengan jeep Dieng, sunrise adventure atau jelajah spot alam anti-mainstream. Include driver lokal & tiket wisata Dieng.
-          </div>
-          <a href="jeep.html" class="khusus-btn">Lihat Detail</a>
-        </div>
-      </div>
-      <div class="khusus-card">
-        <div class="khusus-ikon">💖</div>
-        <div class="khusus-main">
-          <div class="khusus-judul">Paket Bulan Madu Dieng</div>
-          <div class="khusus-harga">Harga mulai <b>Rp4.900.000</b><span class="khusus-satuan">/pasangan</span></div>
-          <div class="khusus-fasilitas">
-            <span>Homestay</span> · <span>Dinner</span>
-          </div>
-          <div class="khusus-text">
-            Honeymoon romantis di Dieng: private homestay, dinner berdua, sesi foto, tour private, dan itinerary istimewa buat pasangan.
-          </div>
-          <a href="honeymoon.html" class="khusus-btn">Lihat Detail</a>
-        </div>
-      </div>
+  </div>
+  <div class="gallery-card">
+    <img src="img/3-hari.jpg" alt="Travel 3 Hari 2 Malam Dieng" />
+    <div class="gallery-card-content">
+      <h3>Travel 3 Hari 2 Malam</h3>
+      <p>Jelajahi semua spot populer Dieng, itinerary fleksibel. Waktu santai, suasana lebih leluasa.</p>
+      <a href="3h2m.html" class="btn-gallery">Lihat Detail</a>
     </div>
-  </section>
-  <!-- INFO CUACA & PEMBAYARAN -->
-  <section class="info-cuate-pay">
-    <div class="cuaca-box">
-      <div class="cuaca-ikon">🌤️</div>
-      <div>
-        <div class="cuaca-judul">Info Cuaca & Persiapan ke Dieng</div>
-        <div class="cuaca-suhu">9–20°C <span class="cuaca-ket">Suhu rata-rata siang & malam</span></div>
-        <div class="cuaca-desc">
-          Dieng memiliki udara sejuk hingga dingin, terutama malam hari.<br>
-          <b>Disarankan membawa:</b> jaket tebal, pakaian hangat, sarung tangan & penutup kepala.
-        </div>
-      </div>
-    </div>
-    <div class="pay-box">
-      <div class="pay-ikon">💳</div>
-      <div>
-        <div class="pay-judul">Metode Pembayaran Trip Dieng</div>
-        <div class="pay-bank">
-          <span>BCA</span> &nbsp;•&nbsp; <span>Mandiri</span> &nbsp;•&nbsp; <span>BNI</span>
-        </div>
-        <div class="pay-desc">
-          Semua pembayaran hanya melalui rekening <b>perusahaan terdaftar</b> demi keamanan & transparansi transaksi Anda.
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- KARTU PILIHAN 1–10 ORANG -->
-  <section class="card-grid" id="paket">
-    <div class="trip-card var1">
-      <div class="trip-badge">Solo Unik</div>
-      <div class="trip-icon">👤</div>
-      <div class="trip-title">1 Orang</div>
-      <div class="trip-desc">Jelajah Dieng sendirian? Bebas custom rute & waktu, dijamin personal dan eksklusif!</div>
-      <a href="1-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var2">
-      <div class="trip-badge">Favorit Couple</div>
-      <div class="trip-icon">💑</div>
-      <div class="trip-title">2 Orang</div>
-      <div class="trip-desc">Liburan romantis atau sahabat trip. Cocok untuk honeymoon atau bestie!</div>
-      <a href="2-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var3">
-      <div class="trip-badge">Best Seller</div>
-      <div class="trip-icon">👨‍👩‍👦</div>
-      <div class="trip-title">3 Orang</div>
-      <div class="trip-desc">Trip bertiga, tetap private dan bebas tentukan destinasi & waktu.</div>
-      <a href="3-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var4">
-      <div class="trip-badge">Keluarga Kecil</div>
-      <div class="trip-icon">👨‍👩‍👧‍👦</div>
-      <div class="trip-title">4 Orang</div>
-      <div class="trip-desc">Paket pas buat keluarga kecil atau bestie geng, kendaraan lega & nyaman.</div>
-      <a href="4-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var5">
-      <div class="trip-badge">Terlaris</div>
-      <div class="trip-icon">🚌</div>
-      <div class="trip-title">5 Orang</div>
-      <div class="trip-desc">Cocok untuk geng kantor atau keluarga, fasilitas makin lengkap, makin hemat!</div>
-      <a href="5-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var6">
-      <div class="trip-badge">Rombongan Mini</div>
-      <div class="trip-icon">👬👬👬</div>
-      <div class="trip-title">6 Orang</div>
-      <div class="trip-desc">Trip seru buat komunitas mini, teman kantor, atau keluarga besar.</div>
-      <a href="6-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var7">
-      <div class="trip-badge">Super Hemat</div>
-      <div class="trip-icon">👫👬👭</div>
-      <div class="trip-title">7 Orang</div>
-      <div class="trip-desc">Satu geng, satu mobil, private tanpa dicampur peserta lain.</div>
-      <a href="7-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var8">
-      <div class="trip-badge">Reuni Mini</div>
-      <div class="trip-icon">🎉🧑‍🤝‍🧑🎉</div>
-      <div class="trip-title">8 Orang</div>
-      <div class="trip-desc">Paket favorit buat outing, reuni, atau keluarga besar. Harga makin hemat!</div>
-      <a href="8-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var9">
-      <div class="trip-badge">Fun Group</div>
-      <div class="trip-icon">🤩🚌🎉</div>
-      <div class="trip-title">9 Orang</div>
-      <div class="trip-desc">Cocok buat trip kantor, komunitas, dan group gathering. Booking gampang!</div>
-      <a href="9-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-    <div class="trip-card var10">
-      <div class="trip-badge">Super Rombongan</div>
-      <div class="trip-icon">🥳🚌👫👫</div>
-      <div class="trip-title">10 Orang</div>
-      <div class="trip-desc">Paket paling hemat, mobil besar, itinerary fleksibel, semua all-in!</div>
-      <a href="10-orang.html" class="trip-btn">Pilih Paket</a>
-    </div>
-  </section>
-  <!-- FAQ SUPER SEO -->
-  <section class="faq-section" id="faq">
-    <h2>Pertanyaan Umum Private Trip Dieng</h2>
-    <details>
-      <summary>Private trip itu apa?</summary>
-      <div>Private trip Dieng adalah wisata khusus sesuai jumlah peserta (1–10 orang), tanpa digabung peserta lain. Rute, jadwal, dan fasilitas bisa kamu request.</div>
-    </details>
-    <details>
-      <summary>Minimal & maksimal peserta?</summary>
-      <div>Bisa dari 1 orang (solo traveler) sampai maksimal 10 orang per mobil. Lebih dari 10 orang bisa dibuat beberapa mobil privat.</div>
-    </details>
-    <details>
-      <summary>Apakah harga makin murah kalau rombongan?</summary>
-      <div>Ya, makin banyak peserta, makin hemat per orang! Semua fasilitas tetap lengkap.</div>
-    </details>
-    <details>
-      <summary>Bisa request destinasi & penjemputan?</summary>
-      <div>100% bisa, bahkan jadwal pun bebas pilih. Konsultasikan ke admin tanpa biaya tambahan.</div>
-    </details>
-    <details>
-      <summary>Cara booking?</summary>
-      <div>Tinggal klik paket di atas, lanjutkan ke WhatsApp admin, dan kamu bisa diskusi langsung.</div>
-    </details>
-  </section>
-  <!-- FOOTER -->
-  <footer class="footer">
-    <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
-    © 2025 Tour Dieng 
-  </footer>
+  </div>
+</section>
+
+<h2>Daftar Harga Trip Dieng 2025</h2>
+<p><strong>Harga fleksibel</strong> sesuai jumlah peserta, fasilitas, dan jenis perjalanan. Berikut estimasi harga mulai yang berlaku:</p>
+
+<table class="harga-wisata" style="width:100%;max-width:700px;border-collapse:collapse;margin-bottom:2em;">
+  <thead>
+    <tr>
+      <th style="padding:8px;border-bottom:1px solid #ddd;text-align:left;">Tipe Perjalanan</th>
+      <th style="padding:8px;border-bottom:1px solid #ddd;text-align:left;">Harga Mulai (per orang)</th>
+      <th style="padding:8px;border-bottom:1px solid #ddd;text-align:left;">Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #eee;"><strong>Trip 1 Hari</strong></td>
+      <td style="padding:8px;border-bottom:1px solid #eee;">Rp295.000</td>
+      <td style="padding:8px;border-bottom:1px solid #eee;">Sudah termasuk transportasi dan tiket wisata</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #eee;"><strong>Tour 2 Hari 1 Malam</strong></td>
+      <td style="padding:8px;border-bottom:1px solid #eee;">Rp845.000</td>
+      <td style="padding:8px;border-bottom:1px solid #eee;">Menginap homestay, termasuk makan & guide lokal</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #eee;"><strong>Travel 3 Hari 2 Malam</strong></td>
+      <td style="padding:8px;border-bottom:1px solid #eee;">Rp1.050.000</td>
+      <td style="padding:8px;border-bottom:1px solid #eee;">Jadwal fleksibel, durasi santai, full spot</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Fasilitas yang Didapatkan</h2>
+<ul>
+  <li><strong>Mobil wisata AC</strong> dan driver berpengalaman</li>
+  <li><strong>Tiket masuk</strong> ke destinasi utama</li>
+  <li><strong>Penginapan atau homestay</strong> (untuk trip menginap)</li>
+  <li><strong>Makan</strong> sesuai jadwal perjalanan</li>
+  <li>Air mineral & snack selama trip</li>
+  <li>Pemandu lokal (jika dibutuhkan)</li>
+  <li>Dokumentasi foto (optional)</li>
+  <li>Konsultasi rencana perjalanan tanpa biaya tambahan</li>
+</ul>
+
+<h2>Info & Pemesanan</h2>
+<p>
+  Untuk konsultasi itinerary, cek jadwal, atau tanya harga group, silakan 
+  <a href="kontak.html" target="_blank"><strong>hubungi admin via WhatsApp</strong></a>.<br>
+  <span style="color:#008860;"><strong>Respon cepat, tanpa biaya konsultasi</strong></span>
+</p>
+
+<h2>Pertanyaan yang Sering Ditanyakan</h2>
+<div class="faq">
+  <h3>Apakah bisa trip privat?</h3>
+  <p><strong>Bisa</strong>, semua jenis perjalanan bisa dibuat private sesuai kebutuhan, baik untuk keluarga, kantor, maupun komunitas.</p>
+
+  <h3>Bisa mulai dari luar kota?</h3>
+  <p>Bisa, tersedia meeting point di <strong>Jogja, Semarang, Purwokerto</strong>, dan beberapa kota lain.</p>
+
+  <h3>Ada pilihan murah untuk rombongan?</h3>
+  <p>Ya, tersedia <strong>harga khusus untuk group minimal 10 orang</strong>.</p>
+
+  <h3>Sudah termasuk tiket wisata?</h3>
+  <p>Semua paket sudah <strong>termasuk tiket masuk objek wisata</strong> sesuai itinerary.</p>
+</div>
+
+<p class="more" style="margin-top:2em;">
+  <a href="https://www.instagram.com/putratourdieng/" target="_blank" rel="nofollow"" style="font-weight:600;">Lihat Gallery Foto dan Video &rarr;</a>
+</p>
+
+<p style="margin-top:2em; color:#555;">
+  Layanan kami dirancang untuk kenyamanan perjalanan Anda ke Dataran Tinggi Dieng. Konsultasi gratis, tanpa komitmen, dan bisa disesuaikan dengan kebutuhan trip Anda.
+</p>
+      </section>
+    </main>
+<section class="seasons">
+  <div class="season-card">
+    <a href="https://www.instagram.com/putratourdieng/" target="_blank" rel="nofollow" class="season-name">Instagram</a>
+    <span class="season-year">Temukan kami di Instagram</span>
+  </div>
+  <div class="season-card">
+    <a href="https://www.tiktok.com/@pakettripdieng" target="_blank" rel="nofollow" class="season-name">Tiktok</a>
+    <span class="season-year">Lihat video seru di Tiktok</span>
+  </div>
+  <div class="season-card">
+    <a href="https://www.youtube.com/@PaketWisataDieng-PutraTour" target="_blank" rel="nofollow" class="season-name">Youtube</a>
+    <span class="season-year">Subscribe channel Youtube</span>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <p>Powered by <a href="/">Paketwisatatourdieng.com</a> — Since 2012</p>
+</footer>
+
+  </div>
 </body>
 </html>

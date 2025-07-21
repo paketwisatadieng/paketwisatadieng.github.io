@@ -1,368 +1,155 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Paket Jeep Dieng — Sunrise, Offroad & Hidden Gem | Rute, Harga, Fasilitas Lengkap</title>
-  <meta name="description" content="Booking paket Jeep Dieng terbaik! Sunrise adventure, offroad seru, jelajah hidden gem. Termasuk driver lokal, tiket wisata, rute lengkap. Pilihan trip jeep Dieng untuk solo, couple, group, dan private trip." />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paket Jeep Dieng – Explore Dieng the Urban Way</title>
+  <link rel="canonical" href="https://paketwisatatourdieng.com/jeep.html" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="canonical" href="/jeep.html">
-  <style>
-    :root {
-      --primary: #009688;
-      --primary-dark: #026c5b;
-      --secondary: #fffbe8;
-      --accent: #ffb300;
-      --footer: #19335a;
-      --radius: 2.2rem;
-      --shadow: 0 8px 32px rgba(0,0,0,0.07);
-      --transition: .19s cubic-bezier(.6,.3,0,1.2);
-    }
-    html, body { margin:0; padding:0; font-family: 'Montserrat', Arial, sans-serif; background:var(--secondary); color:var(--footer);}
-    body { min-height:100vh; line-height:1.67; }
-    section { margin-bottom: 44px; }
-    .header {
-      width: 100%;
-      background: var(--footer);
-      color: #fff;
-      position: fixed;
-      top: 0; left: 0; z-index: 1000;
-      box-shadow: 0 4px 18px #1d355726;
-      padding: 0;
-    }
-    .header-wrap {
-      max-width: 1140px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 22px;
-      height: 66px;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      font-size: 1.35rem;
-      font-weight: 800;
-      text-decoration: none;
-      color: #fff;
-      letter-spacing: 0.01em;
-    }
-    .logo svg { margin-right: 11px; }
-    nav {
-      display: flex;
-      gap: 18px;
-    }
-    nav a {
-      color: #fffbe8;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 4px 13px;
-      border-radius: 16px;
-      transition: background .17s;
-    }
-    nav a:hover, nav a.active {
-      background: var(--primary);
-      color: #fff;
-    }
-    .spacer-header { height: 66px; }
-    .main-jeep {
-      max-width: 880px;
-      margin: 0 auto 44px auto;
-      background: #fff;
-      border-radius: 1.6rem;
-      box-shadow: var(--shadow);
-      padding: 44px 48px 40px 48px;
-    }
-    .main-jeep h1 {
-      font-size: 2.2rem;
-      color: var(--primary-dark);
-      font-weight: 800;
-      margin-top: 0;
-      margin-bottom: 13px;
-      line-height: 1.16;
-      letter-spacing: .01em;
-    }
-    .main-jeep .subtitle {
-      color: #009688;
-      font-size: 1.09rem;
-      font-weight: 700;
-      margin-bottom: 14px;
-    }
-    .main-jeep .jeep-img {
-      width: 100%;
-      max-width: 720px;
-      display: block;
-      margin: 18px auto 30px auto;
-      border-radius: 1.2rem;
-      box-shadow: 0 4px 32px #00968814;
-      object-fit: cover;
-    }
-    .main-jeep p {
-      font-size: 1.07rem;
-      color: #212b35c9;
-      margin-bottom: 22px;
-      margin-top: 0;
-    }
-    .jeep-benefit {
-      background: #f7fafc;
-      border-radius: 1.1rem;
-      padding: 18px 25px 18px 25px;
-      margin: 35px 0 30px 0;
-      font-size: 1.03rem;
-      color: #015256;
-      font-weight: 600;
-      box-shadow: 0 2px 12px #00968810;
-    }
-    .jeep-benefit ul {
-      padding: 0 0 0 23px;
-      margin: 0;
-    }
-    .jeep-benefit li {
-      margin-bottom: 10px;
-      line-height: 1.56;
-    }
-    .jeep-table-wrap {
-      margin: 28px 0 36px 0;
-    }
-    .jeep-table {
-      border-collapse: collapse;
-      width: 100%;
-      background: #fffbe8;
-      border-radius: 1.1rem;
-      overflow: hidden;
-      box-shadow: 0 1px 12px #00968812;
-      font-size: 1.05rem;
-      margin-bottom: 0;
-    }
-    .jeep-table th, .jeep-table td {
-      padding: 13px 14px;
-      border-bottom: 1px solid #e2e9f3;
-      text-align: left;
-    }
-    .jeep-table th {
-      background: #009688;
-      color: #fff;
-      font-weight: 800;
-      letter-spacing: .01em;
-    }
-    .jeep-table tr:last-child td {
-      border-bottom: none;
-    }
-    .jeep-table .harga { color: var(--accent); font-weight: 800; }
-    .main-jeep h2 {
-      font-size: 1.24rem;
-      color: var(--primary);
-      font-weight: 800;
-      margin: 35px 0 16px 0;
-      letter-spacing: .01em;
-    }
-    .main-jeep ul {
-      padding-left: 20px;
-      margin-bottom: 14px;
-    }
-    .main-jeep li {
-      margin-bottom: 8px;
-    }
-    /* FAQ */
-    .faq-section {
-      max-width: 730px;
-      margin:75px auto 52px auto;
-      background: #fff;
-      border-radius: 1.5rem;
-      box-shadow: var(--shadow);
-      padding:32px 26px 34px 26px;
-    }
-    .faq-section h2 {margin:0 0 17px; font-size:1.27rem;}
-    details {margin-bottom:12px;}
-    summary {
-      font-weight:700;
-      font-size:1.08rem;
-      cursor:pointer;
-      transition:color .13s;
-      color:var(--primary);
-      outline:none;
-    }
-    details[open] summary {color:var(--accent);}
-    details div {margin:7px 0 0 14px; color:#222;}
-    /* FOOTER */
-    .footer {
-      margin-top: 72px;
-      background: var(--footer);
-      color: #fff;
-      text-align: center;
-      padding: 25px 0 12px 0;
-      font-size:1rem;
-      border-radius: 1.5rem 1.5rem 0 0;
-      letter-spacing:.01em;
-      box-shadow: 0 -4px 24px #19335a13;
-    }
-    .footer a { color: #ffe16b; text-decoration: underline; }
-    /* Responsive */
-    @media(max-width:900px){
-      .main-jeep {padding: 20px 10px 22px 10px;}
-      .faq-section {padding:16px 7px 20px 7px;}
-    }
-    @media(max-width:600px){
-      .header-wrap { padding: 0 6px; }
-      .main-jeep {padding: 10px 2px 13px 2px;}
-      .main-jeep h1 {font-size:1.22rem;}
-      .jeep-img {margin:10px 0 17px 0;}
-      .jeep-table th, .jeep-table td {padding:7px 8px;}
-      .faq-section{padding:8px 2px 8px 2px;}
-    }
-  </style>
 </head>
+
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-wrap">
-      <a href="/" class="logo">
-        <svg width="28" height="28" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#009688" opacity="0.13"/><path d="M8 28L18 15L24 23L29 18L35 28H8Z" fill="#ffb300"/><circle cx="18" cy="16" r="1.6" fill="#009688"/></svg>
-        PutraTour
-      </a>
-      <nav>
-        <a href="hemat.html">Paket Hemat</a>
-        <a href="kontak.html">Kontak</a>
-      </nav>
-    </div>
-  </header>
-  <div class="spacer-header"></div>
+  <div class="wrapper">
+<header class="header">
+  <div class="logo">
+<span class="semar-icon" aria-label="Candi Arjuna Dieng">
+  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true" focusable="false">
+    <circle cx="22" cy="22" r="22" fill="#F7F5F0"/>
+    <!-- Bawah candi -->
+    <rect x="11" y="30" width="22" height="6" rx="2.2" fill="#a3865c" stroke="#6a4a26" stroke-width="1.2"/>
+    <!-- Tengah candi -->
+    <rect x="15" y="21" width="14" height="9" rx="2" fill="#cbb395" stroke="#6a4a26" stroke-width="1"/>
+    <!-- Badan candi -->
+    <rect x="18" y="14" width="8" height="7" rx="1.2" fill="#f4e4c7" stroke="#6a4a26" stroke-width="1"/>
+    <!-- Kepala candi -->
+    <rect x="20.3" y="10.2" width="3.4" height="4.3" rx="1.1" fill="#e1c48e" stroke="#6a4a26" stroke-width="1"/>
+    <!-- Mahkota -->
+    <rect x="21.5" y="7" width="1" height="4" rx="0.5" fill="#ad874c"/>
+    <!-- Detail pintu -->
+    <rect x="21" y="16.3" width="2" height="2.7" rx="0.6" fill="#a3865c" />
+    <!-- Tangga bawah -->
+    <rect x="16" y="36" width="12" height="2" rx="0.8" fill="#cfb289"/>
+  </svg>
+</span>
+    <span class="brand">Paket Wisata Dieng</span>
+    <p>Sejak 2012</p>
+  </div>
+</header>
 
-  <main class="main-jeep">
-    <h1>Paket Jeep Dieng — Sunrise, Offroad, dan Hidden Gem Eksklusif</h1>
-    <div class="subtitle">Pengalaman Wisata Alam Terbaik & Anti-Mainstream di Dataran Tinggi Dieng</div>
-    <img class="jeep-img" src="jeep-dieng.png" alt="Jeep Dieng Sunrise Adventure" loading="lazy" />
+<nav class="nav" aria-label="Main Navigation">
+<ul>
+  <li><a href="/">Beranda</a></li>
+  <li><a href="tentang.html">Tentang</a></li>
+  <li><a href="ketentuan.html">S&amp;K</a></li>
+  <li><a href="privasi.html">Privasi</a></li>
+  <li><a href="kontak.html">Kontak</a></li>
+</ul>
+</nav>
 
-    <p>
-      Jelajahi pesona alam Dieng dengan cara yang berbeda: <strong>paket Jeep Dieng</strong> hadir buat kamu yang ingin sensasi <b>offroad seru, sunrise di bukit, hingga mengunjungi hidden gem</b> yang tak bisa dijangkau kendaraan biasa. Paket ini sangat cocok untuk solo traveler, pasangan, keluarga, ataupun rombongan kecil yang ingin menjelajah lebih jauh, tanpa ribet dan dijamin seru!
-    </p>
-    <p>
-      Sunrise adventure jadi andalan — nikmati matahari terbit dari spot legendaris seperti <b>Batu Pandang</b>, <b>Gunung Prau Basecamp</b>, atau <b>Bukit Sikunir</b>. Tak hanya itu, kamu juga bisa eksplor jalur-jalur offroad dan destinasi alam tersembunyi yang masih alami, mulai dari sabana, hutan pinus, hingga spot-spot foto Instagramable yang jarang diketahui wisatawan.
-    </p>
-
-    <div class="jeep-benefit">
-      <b>Kenapa Pilih Paket Jeep Dieng?</b>
-      <ul>
-        <li>✅ Rute fleksibel, bisa request sunrise, offroad, atau kombinasi trip sesuai keinginan.</li>
-        <li>✅ Driver lokal berpengalaman & ramah, tahu spot-spot terbaik dan aman.</li>
-        <li>✅ Jeep 4x4 legal, nyaman, dan perawatan rutin.</li>
-        <li>✅ Sudah termasuk tiket wisata di rute, BBM, parkir, dan fasilitas standar keamanan.</li>
-        <li>✅ Cocok untuk pre-wedding, konten kreator, outing, atau sekadar healing tipis-tipis.</li>
-      </ul>
-    </div>
-
-    <h2>Jenis Trip Jeep Dieng & Rute Favorit</h2>
+<main class="main-content">
+  <aside class="categories">
+    <h2>Paket Wisata Populer</h2>
     <ul>
-      <li><b>Sunrise Jeep Adventure</b> — Jemput dini hari ke penginapan/meeting point, trip ke Bukit Sikunir/Batu Pandang untuk sunrise, lanjut ke Telaga Cebong, spot foto, dan hidden gem Dieng.</li>
-      <li><b>Offroad Jelajah Alam</b> — Rute lebih panjang: hutan, sabana, padang rumput, spot tebing, Goa Semar, dll. Sensasi offroad ekstrim dengan view spektakuler.</li>
-      <li><b>Combo Tour Jeep + Wisata Dieng</b> — Gabungan jelajah jeep + kunjungan ke destinasi utama Dieng: Candi Arjuna, Kawah Sikidang, Telaga Warna, dll.</li>
-      <li><b>Custom & Private Trip</b> — Mau request spot, waktu trip, atau sesi foto khusus? Semua bisa diatur sesuai kebutuhan peserta.</li>
+      <li><a href="1hari.html">Paket Wisata 1 Hari</a></li>
+      <li><a href="2h1m.html">Paket Wisata 2 Hari 1 Malam</a></li>
+      <li><a href="3h2m.html">Paket Wisata 3 Hari 2 Malam</a></li>
+      <li><a href="4h3m.html">Paket Wisata 4 Hari 3 Malam</a></li>
+      <li><a href="jeep.html">Paket Jeep Dieng</a></li>
+      <li><a href="2orang.html">Paket 2 Orang</a></li>
+      <li><a href="jogja.html">Paket Wisata Dieng dari Jogja</a></li>
+      <li><a href="semarang.html">Paket Dieng dari Semarang</a></li>
+      <li><a href="purwokerto.html">Paket Dieng dari Purwokerto</a></li>
+      <li><a href="solo.html">Paket Wisata Dieng dari Solo</a></li>
+      <li><a href="bulan-madu.html">Paket Bulan Madu</a></li>
+      <li><a href="private.html">Private Trip Dieng</a></li>
     </ul>
+  </aside>
 
-    <div class="jeep-table-wrap">
-      <table class="jeep-table">
-        <thead>
-          <tr>
-            <th>Pilihan Paket</th>
-            <th>Durasi</th>
-            <th>Peserta</th>
-            <th>Harga mulai</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Jeep Sunrise Adventure</td>
-            <td>3–4 jam</td>
-            <td>1–4 orang</td>
-            <td class="harga">Rp350.000</td>
-          </tr>
-          <tr>
-            <td>Offroad Jelajah Alam</td>
-            <td>5–6 jam</td>
-            <td>1–4 orang</td>
-            <td class="harga">Rp500.000</td>
-          </tr>
-          <tr>
-            <td>Combo Jeep + Wisata Dieng</td>
-            <td>6–8 jam</td>
-            <td>1–4 orang</td>
-            <td class="harga">Rp750.000</td>
-          </tr>
-          <tr>
-            <td>Private Jeep Custom Trip</td>
-            <td>6–10 jam</td>
-            <td>1–4 orang</td>
-            <td class="harga">Mulai Rp850.000</td>
-          </tr>
-        </tbody>
-      </table>
-      <div style="color:#8b7307;font-size:.99rem;margin-top:9px;">
-        <b>Note:</b> Harga sudah termasuk jeep 4x4, driver lokal, tiket wisata rute jeep, BBM, dan parkir. Belum termasuk makan/minum pribadi.
-      </div>
-    </div>
+  <section class="seasonal">
+<h1>Paket Jeep Dieng – Explore Dieng the Urban Way</h1>
+<img src="img/jeep-dieng.jpg" alt="Paket Jeep Dieng – Explore Dieng the Urban Way" style="max-width:100%;height:auto;border-radius:14px;box-shadow:0 4px 24px rgba(40,34,54,0.07);margin-bottom:1.5em;" loading="lazy" />
+<p>
+Rasakan sensasi jelajah alam Dieng dengan gaya berbeda: naik jeep! Paket ini dirancang untuk kamu yang ingin menikmati keindahan dataran tinggi Dieng lewat jalur offroad, menjangkau spot-spot hits dengan perjalanan yang fun dan anti mainstream. Setiap rute bisa dikustom, tinggal pilih destinasi yang kamu suka atau ikuti rekomendasi dari tim lokal.  
+</p>
+<p>
+Jeep sudah ready bersama driver berpengalaman, cocok buat trip keluarga, grup teman, atau solo traveler yang ingin suasana adventure. Cocok untuk menikmati sunrise, golden hour, hingga explore spot tersembunyi di Dieng — semuanya dengan kendaraan yang siap untuk segala medan.
+</p>
 
-    <h2>Fasilitas Paket Jeep Dieng</h2>
-    <ul>
-      <li>✅ Jeep 4x4 legal, sopir lokal (ramah & berpengalaman)</li>
-      <li>✅ Tiket masuk wisata di rute jeep</li>
-      <li>✅ BBM, parkir, biaya operasional</li>
-      <li>✅ Rute bisa request/custom sesuai keinginan</li>
-      <li>✅ Antar-jemput penginapan (area Dieng/Wonosobo) — *khusus sunrise trip*</li>
-      <li>✅ Dokumentasi foto (basic) — *khusus paket tertentu*</li>
-    </ul>
+<h2>Destinasi Jeep Dieng</h2>
+<ul>
+  <li>Bukit Sikunir (sunrise)</li>
+  <li>Telaga Cebong</li>
+  <li>Kawah Sikidang</li>
+  <li>Komplek Candi Arjuna</li>
+  <li>Batu Ratapan Angin</li>
+  <li>Dieng Plateau Theater</li>
+  <li>Taman Pintu Langit</li>
+  <li>Pemandian Air Panas Dieng</li>
+  <li>Kahyangan Skyline</li>
+  <li>Dieng Park</li>
+  <li>Bukit Scooter (sunset/sore)</li>
+  <li>Air Terjun Sikarim</li>
+  <li>Telaga Menjer</li>
+  <li>Perkebunan Teh</li>
+  <li>Sentra Oleh-oleh & Kuliner</li>
+</ul>
+<p>
+<b>Catatan:</b> Destinasi bisa request, rute dan durasi fleksibel sesuai keinginan. Konsultasikan itinerary impianmu ke tim kami.
+</p>
 
-    <h2>Tips & Persiapan Jelajah Jeep Dieng</h2>
-    <ul>
-      <li>Gunakan pakaian hangat, jaket tebal, dan sepatu nyaman (udara sangat dingin di pagi hari).</li>
-      <li>Bawa kamera/smartphone, powerbank, dan pelindung debu (buff/masker) untuk offroad.</li>
-      <li>Booking lebih awal di musim liburan/weekend — kuota jeep terbatas!</li>
-      <li>Selalu ikuti arahan driver & guide demi keamanan bersama.</li>
-    </ul>
-  </main>
+<h2>Fasilitas</h2>
+<ul>
+  <li>Jeep offroad Dieng (kapasitas sesuai kebutuhan)</li>
+  <li>Driver lokal berpengalaman</li>
+  <li>Tiket masuk destinasi wisata pilihan</li>
+</ul>
 
-  <!-- FAQ SUPER SEO -->
-  <section class="faq-section" id="faq">
-    <h2>FAQ Jeep Dieng</h2>
-    <details>
-      <summary>Berapa orang maksimal dalam satu jeep?</summary>
-      <div>Satu jeep biasanya maksimal untuk 4 peserta dewasa. Kalau rombongan besar akan dibagi beberapa jeep (private, tidak dicampur tamu lain).</div>
-    </details>
-    <details>
-      <summary>Bisa pilih spot sunrise sendiri?</summary>
-      <div>Bisa! Spot sunrise favorit: Sikunir, Batu Pandang, atau puncak lain sesuai permintaan (tergantung cuaca & jalur jeep).</div>
-    </details>
-    <details>
-      <summary>Berapa jam durasi trip jeep?</summary>
-      <div>Sunrise trip 3–4 jam, offroad 5–6 jam, combo tour bisa 6–8 jam. Waktu bisa fleksibel sesuai request & kondisi lapangan.</div>
-    </details>
-    <details>
-      <summary>Apakah harga sudah termasuk tiket semua destinasi?</summary>
-      <div>Sudah termasuk tiket masuk destinasi yang dilewati rute jeep. Kalau request destinasi tambahan, biaya bisa menyesuaikan.</div>
-    </details>
-    <details>
-      <summary>Apa bisa antar jemput di penginapan?</summary>
-      <div>Bisa, khusus area Dieng dan Wonosobo kota. Luar area, konsultasikan dulu ke admin sebelum booking.</div>
-    </details>
-    <details>
-      <summary>Bisakah booking mendadak/instan?</summary>
-      <div>Sebaiknya reservasi minimal H-1 (apalagi weekend/long weekend). Jeep terbatas dan sering penuh di musim ramai.</div>
-    </details>
-    <details>
-      <summary>Bagaimana keamanan trip jeep Dieng?</summary>
-      <div>Jeep legal, sopir resmi lokal berpengalaman, jalur sudah familiar. Safety jadi prioritas utama, peserta wajib ikuti instruksi driver.</div>
-    </details>
+<h2>Panduan Trip Jeep Dieng</h2>
+<p>
+Trip ini bisa berangkat dari pagi atau siang, menyesuaikan waktu dan agenda yang kamu pilih. Sangat direkomendasikan untuk membawa kamera, jaket tebal, alas kaki nyaman, dan air minum pribadi. Semua rute aman untuk keluarga, grup, maupun solo traveler.
+</p>
+
+<h2>FAQ Paket Jeep Dieng</h2>
+<div class="faq">
+  <h3>Bisa request tujuan wisata sendiri?</h3>
+  <p>Bisa banget, itinerary dan spot wisata bisa kamu tentukan sendiri atau pakai rekomendasi dari driver lokal.</p>
+
+  <h3>Berapa kapasitas jeep?</h3>
+  <p>Umumnya 3–4 orang per jeep, bisa menyesuaikan jumlah peserta. Untuk grup besar akan disediakan beberapa armada.</p>
+
+  <h3>Sudah termasuk tiket masuk wisata?</h3>
+  <p>Ya, semua tiket masuk destinasi yang kamu pilih sudah termasuk dalam paket.</p>
+
+  <h3>Bisa berangkat dari hotel di Dieng?</h3>
+  <p>Bisa, penjemputan bisa langsung dari hotel/homestay di area Dieng atau Wonosobo.</p>
+</div>
   </section>
+</main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <a href="about.html">About</a> | <a href="kebijakan-privasi.html">Privasi</a> | <a href="ketentuan.html">Ketentuan</a><br><br>
-    © 2025 Tour Dieng 
-  </footer>
+<section class="seasons">
+  <div class="season-card">
+    <a href="https://www.instagram.com/putratourdieng/" target="_blank" rel="nofollow" class="season-name">Instagram</a>
+    <span class="season-year">Temukan kami di Instagram</span>
+  </div>
+  <div class="season-card">
+    <a href="https://www.tiktok.com/@pakettripdieng" target="_blank" rel="nofollow" class="season-name">Tiktok</a>
+    <span class="season-year">Lihat video seru di Tiktok</span>
+  </div>
+  <div class="season-card">
+    <a href="https://www.youtube.com/@PaketWisataDieng-PutraTour" target="_blank" rel="nofollow" class="season-name">Youtube</a>
+    <span class="season-year">Subscribe channel Youtube</span>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Powered by <a href="/">Paketwisatatourdieng.com</a> — Since 2012</p>
+</footer>
+
+  </div>
 </body>
 </html>
