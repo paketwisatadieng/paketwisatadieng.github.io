@@ -366,3 +366,18 @@ body {
   .logo .brand { font-size: 1.2rem; }
   .seasonal h1 { font-size: 1rem; }
 }
+
+/* --- Responsive Table Patch --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+}
