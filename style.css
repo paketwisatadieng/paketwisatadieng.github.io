@@ -366,15 +366,3 @@ body {
   .logo .brand { font-size: 1.2rem; }
   .seasonal h1 { font-size: 1rem; }
 }
-
-/* --- Responsive Table Patch --- */
-@media (max-width: 800px) {
-  .seasonal {
-    overflow-x: auto;
-  }
-  .seasonal table {
-    min-width: 420px;
-    width: 100%;
-    /* display: table;  // default, gak perlu ditambah */
-  }
-}
