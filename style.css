@@ -1,3 +1,142 @@
+/*!
+ * ======================================================================
+ *  Paket Wisata Dieng Official Stylesheet
+ *  --------------------------------------------------------------
+ *  Website   : https://paketwisatatourdieng.com/
+ *  Brand     : Paket Wisata Dieng, Tour Dieng
+ *  Developer : PaketWisataTourDieng.com Team & AI Assistant
+ *  Contact   : info@paketwisatatourdieng.com 
+ *  Copyright : 2025 - PaketWisataTourDieng.com - All Rights Reserved
+ *  License   : For use only in official Paket Wisata Dieng & partner projects.
+ *              Not for redistribution or resale. Contact for collaboration.
+ * ----------------------------------------------------------------------
+ *  Description:
+ *      Custom CSS framework for Paket Wisata Dieng and all affiliated microsites.
+ *      - Clean, modern, professional, and SEO friendly
+ *      - Responsive and mobile-first
+ *      - Typography: 'Segoe UI', Arial, sans-serif
+ *      - Style: Elegant, natural, and confident (tanpa kesan lebay/jadul)
+ *      - Kompatibel dengan static HTML, WordPress, Netlify, Vercel, dll.
+ *
+ *  Palette & Identity:
+ *      --primary: #695F4C   /* Coklat alami pegunungan Dieng (profesional, hangat) */
+ *      --accent : #FFA405   /* Orange gold premium (semangat, eksklusif) */
+ *      --nav    : #4B5360   /* Biru dingin pegunungan (stabil, tegas) */
+ *      --cat    : #847A67   /* Olive tanah & tanaman Dieng (natural, organik) */
+ *      --muted  : #D9D1BC   /* Beige lembut (netral, kalem) */
+ *      --bg     : #fff      /* Putih bersih (universal, trust) */
+ *      --shadow : 0 2px 8px rgba(50, 45, 30, 0.05)
+ *
+ *  Design Principles:
+ *      - Layout mudah dibaca, aksesibel, tidak melelahkan mata
+ *      - Card, tombol, dan navigasi tetap minimalis, tidak norak
+ *      - Efek interaksi smooth, tidak mengganggu SEO
+ *      - Class/classname mudah dipahami & modular
+ *      - Siap di-clone untuk proyek cabang dengan penggantian logo/warna minor
+ *
+ *  SEO & UX Notes:
+ *      - Heading, spacing, dan warna sudah dioptimalkan untuk readability
+ *      - Performance-oriented: minim efek berat, ringan untuk mobile
+ *      - Aman untuk penggunaan inline, CDN, maupun embed di WordPress
+ *
+ *  File Name   : style.css
+ *  Version     : 1.0.0
+ *  Last Update : 2025-07-22
+ * ======================================================================
+ */
+
+:root {
+  --primary: #695F4C;
+  --bg: #fff;
+  --accent: #FFA405;
+  --muted: #D9D1BC;
+  --nav: #4B5360;
+  --cat: #847A67;
+  --shadow: 0 2px 8px rgba(50, 45, 30, 0.05);
+}
+
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f6f2;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+/* ========== Wrapper ========== */
+.wrapper {
+  max-width: 1140px;
+  margin: 32px auto 0 auto;
+  background: var(--bg);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+/* ========== Header ========== */
+.header {
+  background: var(--muted);
+  padding: 32px 40px 16px 40px;
+  text-align: left;
+}
+
+/* Logo & Brand */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.semar-icon {
+  display: flex;
+  align-items: center;
+  height: 48px; width: 48px;
+  background: none;
+}
+.logo .brand {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #19335a;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+.logo p {
+  margin: 2px 0 0 0;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.13rem;
+}
+
+/* ========== Navigation ========== */
+.nav {
+  background: var(--nav);
+  padding: 0 24px;
+}
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 26px;
+  padding: 0;
+  margin: 0;
+}
+.nav li { list-style: none; }
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.07rem;
+  transition: color .18s;
+  padding: 16px 0;
+  display: inline-block;
+}
+.nav a:hover { color: var(--accent); }
+
+/* ========== FAQ Section ========== */
 .faq {
   background: #f7f9fa;
   border-radius: 14px;
@@ -19,102 +158,7 @@
   color: #444f63;
 }
 
-:root {
-  --primary: #695F4C;
-  --bg: #fff;
-  --accent: #FFA405;
-  --muted: #D9D1BC;
-  --nav: #4B5360;
-  --cat: #847A67;
-  --shadow: 0 2px 8px rgba(50, 45, 30, 0.05);
-}
-
-html { font-size: 16px; }
-body {
-  padding: 0; margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f7f6f2;
-  color: var(--primary);
-  font-size: 1rem;
-}
-
-.wrapper {
-  max-width: 1140px;
-  margin: 32px auto 0 auto;
-  background: var(--bg);
-  border-radius: 18px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 95vh;
-}
-
-/* Header */
-.header {
-  background: var(--muted);
-  padding: 32px 40px 16px 40px;
-  text-align: left;
-}
-
-/* Logo + Icon */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.semar-icon {
-  display: flex;
-  align-items: center;
-  height: 48px;
-  width: 48px;
-  background: none;
-}
-.logo .brand {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #19335a;
-  letter-spacing: 0.5px;
-  margin-bottom: 0;
-}
-.logo p {
-  margin: 2px 0 0 0;
-  font-weight: 600;
-  color: var(--primary);
-  font-size: 1.13rem;
-}
-
-/* Navigation */
-.nav {
-  background: var(--nav);
-  padding: 0 24px;
-}
-.nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0 26px;
-  padding: 0;
-  margin: 0;
-}
-.nav li {
-  list-style: none;
-}
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.07rem;
-  transition: color .18s;
-  padding: 16px 0;
-  display: inline-block;
-}
-.nav a:hover {
-  color: var(--accent);
-}
-
-/* GALLERY CARDS - 2 kolom desktop, 1 kolom hp */
+/* ========== Gallery Cards ========== */
 .gallery-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -122,7 +166,6 @@ body {
   justify-content: center;
   align-items: stretch;
   padding: 28px 0 20px 0;
-
 }
 .gallery-card {
   background: #fff;
@@ -184,7 +227,7 @@ body {
   color: #fff;
 }
 
-/* Main Content */
+/* ========== Main Content ========== */
 .main-content {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -192,6 +235,8 @@ body {
   padding: 38px 40px 18px 40px;
   align-items: start;
 }
+
+/* Kategori Sidebar */
 .categories {
   background: var(--cat);
   border-radius: 13px;
@@ -206,8 +251,7 @@ body {
   font-weight: 700;
 }
 .categories ul {
-  padding: 0;
-  margin: 0;
+  padding: 0; margin: 0;
 }
 .categories li {
   list-style: none;
@@ -229,6 +273,7 @@ body {
 }
 .categories a:hover { text-decoration: underline; }
 
+/* ========== Seasonal & Highlight ========== */
 .seasonal {
   background: #F9F7F3;
   border-radius: 13px;
@@ -282,7 +327,7 @@ body {
   color: #fff;
 }
 
-/* Seasons Footer */
+/* ========== Seasons Footer ========== */
 .seasons {
   display: flex;
   justify-content: space-between;
@@ -314,7 +359,7 @@ body {
   margin-top: 7px;
 }
 
-/* Footer */
+/* ========== Footer ========== */
 .footer {
   padding: 19px 0;
   background: #f6f3ed;
@@ -327,7 +372,7 @@ body {
   text-decoration: underline;
 }
 
-/* --- RESPONSIVE PATCH --- */
+/* ========== Responsive ========== */
 @media (max-width: 1140px) {
   .wrapper { border-radius: 0; margin: 0; }
   .main-content, .seasons { padding-left: 18px; padding-right: 18px; }
