@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 Sitemap: https://paketwisatatourdieng.com/sitemap.xml
+
+# Algolia-Crawler-Verif: 11DEB2BBD78D1990
